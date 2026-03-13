@@ -11,18 +11,61 @@
       <div class="container-shell navbar-row">
         <div class="brand-wrap">
           <div class="brand-title">负荷预测</div>
+          <div class="brand-sub">D-6 网页展示与固定系数对比</div>
         </div>
       </div>
     </header>
 
     <main class="container-shell app-layout">
-      <aside class="sidebar-stack" id="sidebarStack">
-        <section class="dashboard-card control-card" id="overviewCard">
+      <aside class="sidebar-stack">
+        <section class="dashboard-card control-card">
           <div class="card-header-row">
-            <h5 class="card-title">目标日控制</h5>
-            <span class="badge-soft">按日切换</span>
+            <h5 class="card-title">运行状态</h5>
+            <span class="badge-soft">D-6</span>
           </div>
+          <div class="mini-overview two-col">
+            <div class="mini-panel">
+              <div class="label-muted">当前站点</div>
+              <div id="siteName" class="value-main">-</div>
+            </div>
+            <div class="mini-panel">
+              <div class="label-muted">已接入实际到</div>
+              <div id="asOfActualDate" class="value-main">-</div>
+            </div>
+            <div class="mini-panel">
+              <div class="label-muted">当前目标日</div>
+              <div id="currentTargetDate" class="value-main">-</div>
+            </div>
+            <div class="mini-panel">
+              <div class="label-muted">下一次实际日期</div>
+              <div id="nextExpectedDate" class="value-main">-</div>
+            </div>
+          </div>
+          <div class="meta-grid">
+            <div class="meta-item">
+              <span class="label-muted">预测模式</span>
+              <strong id="forecastMode">-</strong>
+            </div>
+            <div class="meta-item">
+              <span class="label-muted">路由方式</span>
+              <strong id="routeName">-</strong>
+            </div>
+            <div class="meta-item">
+              <span class="label-muted">Issue 日</span>
+              <strong id="issueDate">-</strong>
+            </div>
+            <div class="meta-item">
+              <span class="label-muted">历史样本天数</span>
+              <strong id="matchedDays">-</strong>
+            </div>
+          </div>
+        </section>
 
+        <section class="dashboard-card">
+          <div class="card-header-row">
+            <h5 class="card-title">日期切换</h5>
+            <span class="help-text">查看不同目标日</span>
+          </div>
           <div class="date-switcher">
             <button id="prevDateButton" type="button" class="btn btn-light-lite">前一日</button>
             <label class="field-block">
@@ -31,356 +74,162 @@
             </label>
             <button id="nextDateButton" type="button" class="btn btn-light-lite">后一日</button>
           </div>
-
-          <div class="status-panel">
-            <span id="dataStatusChip" class="status-chip empty">待加载</span>
-            <div id="targetStatusMeta" class="help-text">正在加载目标日数据状态</div>
-          </div>
-
-          <div class="meta-grid">
-            <div class="meta-item">
-              <span class="label-muted">预测来源</span>
-              <strong id="forecastSource">-</strong>
-            </div>
-            <div class="meta-item">
-              <span class="label-muted">实际来源</span>
-              <strong id="actualSource">-</strong>
-            </div>
-            <div class="meta-item">
-              <span class="label-muted">预测时间</span>
-              <strong id="forecastGeneratedAt">-</strong>
-            </div>
-            <div class="meta-item">
-              <span class="label-muted">实际时间</span>
-              <strong id="actualUpdatedAt">-</strong>
-            </div>
-          </div>
-
-          <div class="mini-overview">
-            <div class="mini-panel">
-              <div class="label-muted">站点</div>
-              <div id="siteName" class="value-main">加载中...</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">当前月</div>
-              <div id="selectedMonthLabel" class="value-main">-</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">7D 准确率</div>
-              <div id="rollingAccuracy" class="value-main">-</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">样本天数</div>
-              <div id="matchedDaysTop" class="value-main">-</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="dashboard-card month-card">
-          <div class="card-header-row">
-            <h5 class="card-title">月统计</h5>
-            <span id="monthHint" class="help-text">按目标日所在月份统计</span>
-          </div>
-          <div class="month-metrics-grid">
-            <div class="mini-panel">
-              <div class="label-muted">当月准确率</div>
-              <div id="monthAccuracy" class="value-main">-</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">5% 命中</div>
-              <div id="monthHitRate" class="value-main">-</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">MAE</div>
-              <div id="monthMae" class="value-main">-</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">RMSE</div>
-              <div id="monthRmse" class="value-main">-</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">样本天数</div>
-              <div id="monthDays" class="value-main">-</div>
-            </div>
-          </div>
-          <div id="monthlyList" class="month-list"></div>
-        </section>
-
-        <section class="dashboard-card form-card" id="manual-entry">
-          <div class="card-header-row">
-            <h5 class="card-title">负荷预测录入</h5>
-          </div>
-          <form id="forecastForm" class="data-form">
-            <div class="field-grid three">
-              <label class="field-block">
-                <span class="label-muted">日期</span>
-                <input type="date" name="target_date" required />
-              </label>
-              <label class="field-block">
-                <span class="label-muted">来源</span>
-                <input type="text" name="source" value="网页录入" required />
-              </label>
-              <label class="field-block">
-                <span class="label-muted">站点</span>
-                <input type="text" name="site_name" value="辉华" required />
-              </label>
-            </div>
-            <label class="field-block">
-              <span class="label-muted">备注</span>
-              <input type="text" name="note" placeholder="可选" />
-            </label>
-            <label class="field-block">
-              <span class="label-muted">24 点数据</span>
-              <textarea
-                id="forecastRawInput"
-                name="raw_values"
-                rows="3"
-                placeholder="直接粘贴 Excel 的一行/一列 24 个值，或粘贴 00:00 730 这类文本"
-              ></textarea>
-            </label>
-            <div class="toolbar-row">
-              <button type="button" class="btn btn-outline-lite" data-parse-target="forecast">识别</button>
-              <span id="forecastParseStatus" class="help-text">请粘贴 24 个小时值</span>
-            </div>
-            <div id="forecastPreview" class="preview-grid"></div>
-            <button type="submit" class="btn btn-primary-lite full-width">提交负荷预测</button>
-          </form>
-          <div id="forecastFormStatus" class="help-text status-line"></div>
+          <div id="selectedDateHint" class="help-text status-line">切换后会同步刷新曲线和准确率</div>
         </section>
 
         <section class="dashboard-card form-card">
           <div class="card-header-row">
-            <h5 class="card-title">负荷实际回填</h5>
+            <h5 class="card-title">上传 D-6 实际</h5>
+            <a class="inline-link" href="/api/actual-template">模板</a>
           </div>
-          <form id="actualForm" class="data-form">
-            <div class="field-grid two">
-              <label class="field-block">
-                <span class="label-muted">日期</span>
-                <input type="date" name="target_date" required />
-              </label>
-              <label class="field-block">
-                <span class="label-muted">来源</span>
-                <input type="text" name="source" value="EMS回填" required />
-              </label>
-            </div>
+          <form id="actualUploadForm" class="data-form">
             <label class="field-block">
-              <span class="label-muted">24 点数据</span>
+              <span class="label-muted">实际日期</span>
+              <input id="actualDateInput" name="actual_date" type="date" required />
+            </label>
+            <label class="field-block">
+              <span class="label-muted">上传 CSV</span>
+              <input id="actualFileInput" name="actual_file" type="file" accept=".csv" />
+            </label>
+            <label class="field-block">
+              <span class="label-muted">或直接粘贴 24 个值</span>
               <textarea
-                id="actualRawInput"
+                id="rawValuesInput"
                 name="raw_values"
-                rows="3"
-                placeholder="支持 Excel 整行/整列粘贴，也支持带时段标签文本"
+                rows="5"
+                placeholder="支持空格、换行、逗号分隔，必须正好 24 个分时值"
               ></textarea>
             </label>
             <div class="toolbar-row">
-              <button type="button" class="btn btn-outline-lite" data-parse-target="actual">识别</button>
-              <span id="actualParseStatus" class="help-text">请粘贴 24 个小时值</span>
+              <button type="submit" class="btn btn-primary-lite full-width">更新历史并生成下一次 D 日预测</button>
             </div>
-            <div id="actualPreview" class="preview-grid"></div>
-            <button type="submit" class="btn btn-secondary-lite full-width">提交负荷实际</button>
           </form>
-          <div id="actualFormStatus" class="help-text status-line"></div>
+          <div id="uploadStatus" class="help-text status-line"></div>
         </section>
 
-        <section class="dashboard-card api-card" id="api-section">
-          <div class="api-summary">
-            <span class="card-title">API 上传 Demo</span>
+        <section class="dashboard-card formula-card">
+          <div class="card-header-row">
+            <h5 class="card-title">固定系数说明</h5>
           </div>
-          <div class="api-content">
-            <div class="help-text">下面 3 个示例可直接用于外部系统推送负荷预测与负荷实际。</div>
-            <div class="api-example">
-              <div class="api-example-head">
-                <strong class="api-example-title">联合上传预测与实际</strong>
-                <code>POST /api/load-records</code>
-              </div>
-              <pre id="loadRecordCurlExample"></pre>
-              <pre id="loadRecordExample"></pre>
-            </div>
-            <div class="api-example">
-              <div class="api-example-head">
-                <strong class="api-example-title">单独上传负荷预测</strong>
-                <code>POST /api/forecasts</code>
-              </div>
-              <pre id="forecastCurlExample"></pre>
-              <pre id="forecastExample"></pre>
-            </div>
-            <div class="api-example">
-              <div class="api-example-head">
-                <strong class="api-example-title">单独上传负荷实际</strong>
-                <code>POST /api/actuals</code>
-              </div>
-              <pre id="actualCurlExample"></pre>
-              <pre id="actualExample"></pre>
-            </div>
-            <div class="api-note">
-              <div>请求头固定使用 <code>Content-Type: application/json</code>。</div>
-              <div>如设置了 <code>DEMO_API_KEY</code>，再补一行 <code>X-API-Key: your-token</code>。</div>
-            </div>
-          </div>
+          <div id="fixedFormulaText" class="formula-block">0.5*D-7 + 0.3*D-14 + 0.2*D-21</div>
+          <div class="help-text">固定系数预测在页面上始终使用相同口径，与模型预测共用同一张分时图。</div>
         </section>
       </aside>
 
-      <section class="content-stack" id="contentStack">
-        <section class="dashboard-card content-hero-card" id="mainPanel">
+      <section class="content-stack">
+        <section class="dashboard-card content-hero-card">
           <div class="content-hero-head">
             <div class="content-hero-copy">
-              <span class="section-kicker">目标日概览</span>
-              <h4 id="heroSelectedDate" class="content-hero-date">-</h4>
-              <p id="heroMonthMeta" class="summary-note">按目标日查看负荷预测、实际与准确率</p>
+              <span class="section-kicker">选中目标日</span>
+              <h4 id="heroTargetDate" class="content-hero-date">-</h4>
+              <p id="heroSummaryNote" class="summary-note">过去准确率从 2026-01 开始展示，可切换不同日期查看。</p>
             </div>
             <div class="content-hero-focus">
-              <div class="label-muted">当日准确率</div>
-              <div id="dayAccuracy" class="accuracy-main-value">-</div>
-              <div id="dayAccuracyHint" class="summary-note">结合命中率与偏差综合查看</div>
+              <div class="label-muted">模型日总量准确率</div>
+              <div id="heroModelDayAccuracy" class="accuracy-main-value">-</div>
+              <div id="heroFixedTotalHint" class="summary-note">固定系数日总量准确率：-</div>
             </div>
           </div>
 
-          <div class="hero-month-switch-card">
-            <div class="hero-month-switch-head">
-              <div>
-                <div class="label-muted">月份切换</div>
-                <div id="heroMonthSwitchHint" class="summary-note">点击月份直接切换当月统计、曲线与按日记录</div>
-              </div>
-              <strong id="heroMonthSwitchCurrent" class="hero-month-current">-</strong>
+          <div class="content-hero-metrics four-col">
+            <div class="mini-panel accent-panel">
+              <div class="label-muted">模型日总量准确率</div>
+              <div id="modelDayAccuracy" class="value-main">-</div>
             </div>
-            <div id="heroMonthSwitch" class="hero-month-switch-bar"></div>
-          </div>
-
-          <div class="content-hero-metrics">
-            <div class="mini-panel">
-              <div class="label-muted">7D 准确率</div>
-              <div id="rollingAccuracyMain" class="value-main">-</div>
+            <div class="mini-panel warm-panel">
+              <div class="label-muted">固定系数日总量准确率</div>
+              <div id="fixedDayAccuracy" class="value-main">-</div>
             </div>
             <div class="mini-panel">
-              <div class="label-muted">当月准确率</div>
-              <div id="monthAccuracyMain" class="value-main">-</div>
+              <div class="label-muted">模型日电量</div>
+              <div id="modelTotal" class="value-main">-</div>
             </div>
             <div class="mini-panel">
-              <div class="label-muted">5% 命中</div>
-              <div id="dayHitRateMain" class="value-main">-</div>
-            </div>
-            <div class="mini-panel">
-              <div class="label-muted">最大绝对偏差</div>
-              <div id="dayMaxAbsErrorMain" class="value-main">-</div>
-            </div>
-          </div>
-
-          <div class="content-summary-grid">
-            <div class="summary-box">
-              <div class="label-muted">24H 负荷预测总量</div>
-              <div id="forecastTotal" class="summary-value">-</div>
-            </div>
-            <div class="summary-box">
-              <div class="label-muted">24H 负荷实际总量</div>
-              <div id="actualTotal" class="summary-value">-</div>
-            </div>
-            <div class="summary-box">
-              <div class="label-muted">平均负荷</div>
-              <div id="avgLoad" class="summary-value">-</div>
-            </div>
-            <div class="summary-box">
-              <div class="label-muted">峰值</div>
-              <div id="peakInfo" class="summary-value">-</div>
-            </div>
-            <div class="summary-box">
-              <div class="label-muted">谷值</div>
-              <div id="valleyInfo" class="summary-value">-</div>
+              <div class="label-muted">固定系数日电量</div>
+              <div id="fixedTotal" class="value-main">-</div>
             </div>
           </div>
         </section>
 
-        <div class="content-analytics-grid">
-          <section class="dashboard-card detail-panel">
-            <div class="panel-head">
-              <div>
-                <h5 class="card-title">当日准确率明细</h5>
-                <div class="help-text">按最新负荷预测与对应负荷实际计算</div>
-              </div>
-            </div>
-            <div class="metric-detail-grid">
-              <div class="mini-panel">
-                <div class="label-muted">准确率</div>
-                <div id="dayAccuracyDetail" class="value-main">-</div>
-              </div>
-              <div class="mini-panel">
-                <div class="label-muted">MAE</div>
-                <div id="metricMae" class="value-main">-</div>
-              </div>
-              <div class="mini-panel">
-                <div class="label-muted">RMSE</div>
-                <div id="metricRmse" class="value-main">-</div>
-              </div>
-              <div class="mini-panel">
-                <div class="label-muted">5% 命中</div>
-                <div id="dayHitRate" class="value-main">-</div>
-              </div>
-              <div class="mini-panel">
-                <div class="label-muted">最大绝对偏差</div>
-                <div id="dayMaxAbsError" class="value-main">-</div>
-              </div>
-            </div>
-          </section>
-
-          <section class="dashboard-card trend-panel">
-            <div class="panel-head">
-              <div>
-                <h5 class="card-title">当月日准确率</h5>
-                <div id="dailyTrendHint" class="help-text">暂无日准确率数据</div>
-              </div>
-            </div>
-            <svg id="accuracyChart" class="chart-svg chart-small" viewBox="0 0 860 220"></svg>
-          </section>
-        </div>
-
-        <section class="dashboard-card load-card">
-          <div class="panel-head panel-head-split load-head">
-            <div class="load-head-copy">
-              <h5 class="card-title">目标日负荷曲线</h5>
-              <div id="chartHint" class="help-text chart-hint">暂无曲线数据</div>
-            </div>
-            <div class="legend-inline load-legend">
-              <span><i class="legend-dot forecast"></i>负荷预测</span>
-              <span><i class="legend-dot actual"></i>负荷实际</span>
+        <section class="dashboard-card chart-card">
+          <div class="card-header-row">
+            <h5 class="card-title">选中日期分时对比</h5>
+            <div class="chart-legend">
+              <span><i class="legend-dot actual"></i>实际</span>
+              <span><i class="legend-dot model"></i>模型</span>
+              <span><i class="legend-dot fixed"></i>固定系数</span>
             </div>
           </div>
-          <svg id="loadChart" class="chart-svg chart-main" viewBox="0 0 860 320"></svg>
-        </section>
-
-        <section class="dashboard-card history-card" id="historyCard">
-          <div class="history-head">
-            <div>
-              <h5 class="card-title">按日记录</h5>
-              <div class="help-text">按目标日聚合展示历史预测、实际与准确率</div>
-            </div>
-            <span id="historyCaption" class="caption-badge">-</span>
+          <div class="chart-shell">
+            <svg id="profileChart" class="line-chart" viewBox="0 0 960 360" preserveAspectRatio="none"></svg>
           </div>
-          <div class="history-scroll">
-            <table class="data-table">
-              <colgroup>
-                <col class="history-col-date" />
-                <col class="history-col-status" />
-                <col class="history-col-source" />
-                <col class="history-col-total" />
-                <col class="history-col-total" />
-                <col class="history-col-rate" />
-                <col class="history-col-metric" />
-                <col class="history-col-metric" />
-                <col class="history-col-rate" />
-              </colgroup>
+          <div id="chartAxisLabels" class="chart-axis-labels"></div>
+
+          <div class="card-header-row hourly-head">
+            <h5 class="card-title">24 小时电量明细</h5>
+            <span class="help-text">切换日期后同步更新</span>
+          </div>
+          <div class="copy-panel">
+            <div class="copy-panel-head">
+              <div>
+                <div class="copy-panel-title">模型电量 Excel 横向复制</div>
+                <div class="help-text">一键复制后，可直接粘贴到 Excel 同一行的 24 个单元格</div>
+              </div>
+              <button id="copyModelRowButton" type="button" class="btn btn-primary-lite">复制 24 点模型电量</button>
+            </div>
+            <textarea
+              id="modelCopyOutput"
+              class="copy-output"
+              rows="2"
+              readonly
+              wrap="off"
+              spellcheck="false"
+              placeholder="切换目标日后，这里会生成可直接横向粘贴到 Excel 的 24 个点"
+            ></textarea>
+            <div id="copyModelStatus" class="help-text status-line"></div>
+          </div>
+          <div class="table-wrap hourly-table-wrap">
+            <table class="data-table hourly-data-table">
               <thead>
                 <tr>
-                  <th class="history-col-date">日期</th>
-                  <th class="history-col-status">状态</th>
-                  <th class="history-col-source">来源</th>
-                  <th class="history-col-total">负荷预测总量</th>
-                  <th class="history-col-total">负荷实际总量</th>
-                  <th class="history-col-rate history-group-start">准确率</th>
-                  <th class="history-col-metric">MAE</th>
-                  <th class="history-col-metric">RMSE</th>
-                  <th class="history-col-rate">5% 命中</th>
+                  <th>时段</th>
+                  <th>实际电量</th>
+                  <th>模型电量</th>
+                  <th>固定系数电量</th>
                 </tr>
               </thead>
-              <tbody id="historyTableBody"></tbody>
+              <tbody id="hourlyTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="dashboard-card">
+          <div class="card-header-row">
+            <h5 class="card-title">历史日总量准确率（月）</h5>
+            <span id="historyStartText" class="help-text">从 2026-01 开始</span>
+          </div>
+          <div id="monthlyCards" class="monthly-card-grid"></div>
+        </section>
+
+        <section class="dashboard-card">
+          <div class="card-header-row">
+            <h5 class="card-title">当前月份按日对比</h5>
+            <span id="selectedMonthHint" class="help-text">展示当前选中月份的已匹配目标日</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>目标日</th>
+                  <th>实际日电量</th>
+                  <th>模型日电量</th>
+                  <th>固定系数日电量</th>
+                  <th>模型日总量准确率</th>
+                  <th>固定系数日总量准确率</th>
+                  <th>路由</th>
+                </tr>
+              </thead>
+              <tbody id="recentTableBody"></tbody>
             </table>
           </div>
         </section>

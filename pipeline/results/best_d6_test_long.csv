@@ -1,0 +1,841 @@
+sample_id,site_id,site_name,city_cn,issue_date,target_date,target_refined_date_type,hour,actual_load,predicted_load
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,0,2.11506,2.00979100145285
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,1,1.4123,1.263538770409256
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,2,1.4264100000000002,1.035093279534946
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,3,0.94852,0.8380274715674261
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,4,0.69612,0.695871147232316
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,5,0.70234,0.7616147807657863
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,6,1.17665,1.1336473337441653
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,7,1.6249,1.4757566271714777
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,8,0.7523200000000001,0.6784757525772143
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,9,0.70209,0.702085701806662
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,10,0.32353,0.3583541808440692
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,11,0.40082,0.35636305131203816
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,12,0.97251,1.2130607459663572
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,13,1.04057,1.113178805801005
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,14,0.4728,0.5055901756876109
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,15,0.58706,0.47081902404766096
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,16,0.50866,0.4822547557719241
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,17,0.45515,0.40980816280560683
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,18,0.63252,0.47811694915273956
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,19,0.8342,1.0992400669165412
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,20,1.10634,1.1402892144375476
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,21,1.16597,0.9506383413972977
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,22,1.11799,0.7133841459904038
+all_equivalent5_ext_20260201,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-26,2026-02-01,weekend_w6,23,0.718,0.6838333717477281
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,0,2.16307,1.8159622059164406
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,1,1.15621,1.2128063365429824
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,2,1.02424,1.0068451690829108
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,3,0.89412,0.7334904078105147
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,4,0.64409,0.6034619245118396
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,5,0.53225,0.7482200200296267
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,6,1.31263,1.1923221475973023
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,7,1.43093,1.3607858409498677
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,8,0.8203900000000001,0.7339056363062629
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,9,0.50005,0.7507658109055547
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,10,0.33924,0.38209754516523353
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,11,0.30361,0.41955448699399356
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,12,1.17641,1.4349647899421047
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,13,1.2026400000000002,1.2383199681500878
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,14,0.51635,0.4723926807798107
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,15,0.42551,0.4885669829920109
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,16,0.47735,0.48161064573050105
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,17,0.3656,0.458946418844477
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,18,0.59862,0.4786211716148129
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,19,1.29644,1.2447720345745648
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,20,1.65465,1.2461526134364718
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,21,0.91627,0.9125580495709658
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,22,0.74812,0.7908798161077697
+all_equivalent5_ext_20260202,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-27,2026-02-02,workday_w0,23,0.77416,0.697841015776421
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,0,1.7845400000000002,1.8983046818470881
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,1,1.3203,1.195585312502974
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,2,0.96814,0.9524361455937225
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,3,0.72202,0.7000647957044452
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,4,0.63213,0.5612723016416308
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,5,0.69234,0.7716594660119693
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,6,1.0082,1.1557954151364025
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,7,1.52697,1.353046799236465
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,8,0.68825,0.6728927940194995
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,9,0.79811,0.7525406318747999
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,10,0.37551,0.3345623046867433
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,11,0.33761,0.39915293996652956
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,12,1.4067500000000002,1.4307240943276462
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,13,1.0966,1.2056195582338656
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,14,0.58897,0.4766033054140158
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,15,0.43778,0.4502683168535028
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,16,0.6232800000000001,0.5106192012078531
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,17,0.4972,0.5607641245183281
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,18,0.63254,0.5216324046735049
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,19,1.37053,1.1326580653468983
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,20,1.42844,1.2402178173348868
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,21,1.0961,1.0143103168481984
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,22,0.63235,0.7533105039901274
+all_equivalent5_ext_20260203,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-28,2026-02-03,workday_w1,23,0.73029,0.7140973613761419
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,0,2.14099,1.813431065084399
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,1,1.36822,1.201329056792797
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,2,0.91806,0.8444840496544591
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,3,0.8961300000000001,0.7444816655583172
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,4,0.6941900000000001,0.5877428348520489
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,5,0.73231,0.7310309317709254
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,6,1.22043,1.1508421463182776
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,7,1.25878,1.4097181537225785
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,8,0.5681499999999999,0.6640878541578671
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,9,0.73213,0.6788840826820839
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,10,0.37167,0.35225466629117264
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,11,0.47908,0.3872880789547315
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,12,1.11461,1.3710896349636574
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,13,1.31856,1.2361848431606752
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,14,0.40751,0.47412368302668795
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,15,0.54486,0.4807234513231725
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,16,0.65576,0.5065308206117964
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,17,0.50907,0.4375072134302218
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,18,0.53309,0.5152308270775543
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,19,1.30039,1.0303136771158445
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,20,1.19624,1.2334815950968596
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,21,0.88002,0.9885565737404339
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,22,0.70615,0.8546278244206449
+all_equivalent5_ext_20260204,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-29,2026-02-04,workday_w2,23,0.6081,0.7029712893205818
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,0,1.78458,1.8792629335622473
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,1,1.39848,1.250520640286916
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,2,0.90822,0.9992680641594439
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,3,0.73221,0.7848547088431377
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,4,0.5601,0.6876928569649723
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,5,0.5622199999999999,0.7670485160467075
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,6,1.21453,1.1684002050173379
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,7,1.33474,1.4804337314630311
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,8,0.8161,0.7853359824138435
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,9,0.72618,0.8192490773531902
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,10,0.30748,0.38435427364005326
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,11,0.35111,0.451351401292889
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,12,1.14062,1.5071290735048
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,13,0.9004300000000001,1.255987904243816
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,14,0.3572,0.5125508091348236
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,15,0.42092,0.525423838577606
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,16,0.30345,0.5458778564012106
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,17,0.35702,0.49524500929923
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,18,0.325,0.5510010059667253
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,19,0.90431,1.1851389431112977
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,20,0.8343799999999999,1.3063855327189953
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,21,0.79021,1.0651752491179236
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,22,0.43213,0.8869236655404173
+all_equivalent5_ext_20260205,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-30,2026-02-05,workday_w3,23,0.47208,0.7219196098381264
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,0,1.65863,1.8642457209468932
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,1,1.16419,1.2058840013420535
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,2,0.74993,0.9391439086334432
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,3,0.79227,0.7555822434205746
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,4,0.55216,0.6389851422365322
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,5,0.6502700000000001,0.7797722819091093
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,6,0.91833,1.1449343518398054
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,7,1.11462,1.4612058728556918
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,8,0.8201799999999999,0.8496633487659436
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,9,0.55206,0.7579099707149806
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,10,0.29381,0.3493029203471346
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,11,0.33748,0.4112489423821267
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,12,1.53267,1.4430832260227042
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,13,1.16432,1.331458474121546
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,14,0.55081,0.5731600082062354
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,15,0.34954,0.5231466868280672
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,16,0.47746,0.5825143800136561
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,17,0.47516,0.5685972541428761
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,18,0.38301,0.5534397813592499
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,19,0.88829,1.2252699903280975
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,20,0.96412,1.329168813994942
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,21,0.8744399999999999,1.0140045141194982
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,22,0.66032,0.8422547617323203
+all_equivalent5_ext_20260206,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-01-31,2026-02-06,workday_w4,23,0.68624,0.851646155256119
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,0,1.87467,1.8882450249105573
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,1,1.40405,1.3232358353790286
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,2,0.86209,1.1141460631865006
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,3,0.60006,0.8105457081318548
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,4,0.62811,0.6827042203572147
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,5,0.77845,0.7912129015857079
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,6,0.94643,1.118837665067915
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,7,1.11461,1.4071520864780451
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,8,0.73203,0.7686612545381251
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,9,0.58602,0.752813027318324
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,10,0.35145,0.39410081268122166
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,11,0.31518,0.38884338172937083
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,12,0.92253,1.3647906318919105
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,13,1.13076,1.2085105058915562
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,14,0.45291,0.6104163088601469
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,15,0.44325,0.5402035627624067
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,16,0.54326,0.6091901897263372
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,17,0.34943,0.5157639651759297
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,18,0.3792999999999999,0.533726499029211
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,19,0.82443,1.1190628544482966
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,20,0.96436,1.1948039189174606
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,21,0.8041,0.9604438702127663
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,22,0.63017,0.8184856191155652
+all_equivalent5_ext_20260207,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-01,2026-02-07,weekend_w5,23,0.74796,0.7482185745077894
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,0,1.66454,2.0749714045070466
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,1,1.1842,1.3306702055781434
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,2,0.672,1.1696278920532934
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,3,0.62408,0.900398138535086
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,4,0.42805,0.7242916161172344
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,5,0.70221,0.7479586226015128
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,6,0.8343400000000001,1.1969919986436937
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,7,1.24298,1.5147320802473865
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,8,0.45213,0.6752435139006379
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,9,0.42406,0.6603659415576348
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,10,0.26976,0.3265220988664842
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,11,0.27587,0.36278404541857
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,12,1.2784,1.1258942767907962
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,13,0.9964,1.0998722567190342
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,14,0.43332,0.5084983976705844
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,15,0.41745,0.5169106969918134
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,16,0.34942,0.5549277883045702
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,17,0.39688,0.45611685005870983
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,18,0.3568099999999999,0.5587469153280211
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,19,0.8885,1.0044779540131805
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,20,0.92449,1.2107912587528693
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,21,0.6261099999999999,1.0182788436786159
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,22,0.44222,0.8725556488130759
+all_equivalent5_ext_20260208,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-02,2026-02-08,weekend_w6,23,0.45806,0.7397944307015748
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,0,1.74058,1.9704898863789768
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,1,1.34225,1.2817726548142478
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,2,1.0042,1.111466573277628
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,3,0.69404,0.8792517554251116
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,4,0.52415,0.7418288706529834
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,5,0.65629,0.8025745015902767
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,6,0.82431,1.2375768382463348
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,7,1.03277,1.4619947872126935
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,8,0.50794,0.7575193166335707
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,9,0.46214,0.708446633875118
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,10,0.27938,0.3934773297489146
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,11,0.355,0.4364349179343182
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,12,1.24868,1.4058726867399054
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,13,0.97238,1.191299703394238
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,14,0.42091,0.49773161188650034
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,15,0.37734,0.4856531544806082
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,16,0.4708,0.5553432858162821
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,17,0.37943,0.45568782901002935
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,18,0.5127,0.5568254554557244
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,19,0.81833,1.262285562786818
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,20,1.10468,1.407152912345882
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,21,0.5783,0.9428313907472959
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,22,0.69825,0.7884178071908903
+all_equivalent5_ext_20260209,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-03,2026-02-09,workday_w0,23,0.5643,0.7334390654934995
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,0,1.83068,1.940675735160784
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,1,1.05414,1.269831634854786
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,2,0.6280600000000001,1.0049098523009241
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,3,0.54612,0.7908979246783849
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,4,0.54005,0.6234084978825032
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,5,0.51602,0.787109430526902
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,6,1.01832,1.2076836949873813
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,7,1.02651,1.3689233305748851
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,8,0.43818,0.6871884560229734
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,9,0.52437,0.7082348899401858
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,10,0.20767,0.356210666494405
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,11,0.3452,0.41342060248859624
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,12,1.23054,1.418489047904397
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,13,0.8706,1.1812852995306893
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,14,0.45071,0.4975784544536358
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,15,0.30743,0.47756171348118254
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,16,0.38737,0.5654532192079049
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,17,0.39303,0.5615850355672954
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,18,0.34338,0.5592184214067499
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,19,0.69032,1.1792040475250172
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,20,0.82828,1.3171128758423953
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,21,0.60224,1.0341761556227378
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,22,0.67823,0.7750655881436302
+all_equivalent5_ext_20260210,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-04,2026-02-10,workday_w1,23,0.53416,0.6942216459524375
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,0,1.55038,1.8801908167738657
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,1,1.11026,1.2984808701963202
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,2,0.73993,0.9937391096942634
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,3,0.49418,0.772962752002001
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,4,0.60021,0.6076413794022711
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,5,0.45004,0.7699560355434294
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,6,0.5480700000000001,1.1972396320818728
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,7,0.69643,1.3928154226216851
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,8,0.38204,0.6923842321889031
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,9,0.46809,0.6530369906895397
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,10,0.28114,0.3373265696072357
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,11,0.22151,0.4245798660832734
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,12,1.04057,1.251559600778723
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,13,0.73448,1.1674638533037833
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,14,0.2653,0.4472950868387282
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,15,0.2771099999999999,0.471346673993146
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,16,0.39856,0.5522259875665478
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,17,0.3606399999999999,0.44408488022942105
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,18,0.26899,0.5026132872741162
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,19,0.49214,1.076403081682173
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,20,0.7362099999999999,1.2629162817302504
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,21,0.7542099999999999,0.9668010133502067
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,22,0.41224,0.7934732183578634
+all_equivalent5_ext_20260211,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-05,2026-02-11,workday_w2,23,0.5041100000000001,0.6952652896243712
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,0,1.63243,1.508292
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,1,0.95238,1.040946
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,2,0.6421699999999999,1.041763
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,3,0.69802,0.632011
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,4,0.48214,0.453199
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,5,0.48822,0.435776
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,6,0.63221,0.886512
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,7,0.78622,1.277493
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,8,0.38021,0.503602
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,9,0.3839599999999999,0.463678
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,10,0.23357,0.2627049999999999
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,11,0.30121,0.2595409999999999
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,12,1.01878,0.903824
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,13,0.80039,0.790489
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,14,0.1954,0.31778
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,15,0.21545,0.279208
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,16,0.35508,0.371043
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,17,0.25954,0.347974
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,18,0.20924,0.318616
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,19,0.60629,0.534867
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,20,0.89254,0.814298
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,21,0.31003,0.486728
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,22,0.34816,0.4444
+all_equivalent5_ext_20260212,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-06,2026-02-12,pre_Spring Festival_d3,23,0.39012,0.455265
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,0,1.42636,1.447311
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,1,1.09622,0.8172550000000001
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,2,0.62404,0.69637
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,3,0.60405,0.521012
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,4,0.38207,0.391725
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,5,0.4121,0.4790339999999999
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,6,0.6842,0.689604
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,7,0.57826,0.742291
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,8,0.372,0.282877
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,9,0.33204,0.454288
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,10,0.2394,0.28969
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,11,0.2055,0.311025
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,12,0.86867,0.932412
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,13,0.7286,1.122033
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,14,0.2216699999999999,0.420992
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,15,0.20572,0.269694
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,16,0.19163,0.2220359999999999
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,17,0.29296,0.279131
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,18,0.22729,0.244214
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,19,0.8583,0.832917
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,20,0.62619,0.644545
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,21,0.43003,0.541122
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,22,0.32008,0.57253
+all_equivalent5_ext_20260213,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-07,2026-02-13,pre_Spring Festival_d2,23,0.5042599999999999,0.284141
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,0,1.45827,1.340172
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,1,0.72999,0.915708
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,2,0.66386,0.7073659999999999
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,3,0.52199,0.588603
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,4,0.32008,0.544098
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,5,0.3781,0.270083
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,6,0.33209,0.676832
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,7,0.92849,1.156112
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,8,0.27803,0.334755
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,9,0.38806,0.297585
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,10,0.1837,0.330506
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,11,0.17348,0.253115
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,12,0.89301,0.910901
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,13,0.60649,0.7567410000000001
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,14,0.29922,0.461617
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,15,0.21148,0.31249
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,16,0.32878,0.28879
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,17,0.23912,0.289812
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,18,0.1676699999999999,0.284242
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,19,0.71225,0.5495410000000001
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,20,0.5721700000000001,0.54498
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,21,0.3621,0.476785
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,22,0.312,0.397876
+all_equivalent5_ext_20260214,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-08,2026-02-14,pre_Spring Festival_d1,23,0.40209,0.475043
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,0,1.44827,1.2030835
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,1,0.86204,0.8221375
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,2,0.71214,0.55413
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,3,0.36201,0.406027
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,4,0.26009,0.3075745
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,5,0.31804,0.434193
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,6,0.41418,0.5104965
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,7,0.71644,0.6740139999999999
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,8,0.24002,0.35531749999999995
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,9,0.29209,0.2429665
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,10,0.16154,0.1941365
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,11,0.16975,0.212557
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,12,0.55047,0.591197
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,13,0.5743,0.5187365
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,14,0.31513,0.25455300000000003
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,15,0.1377,0.32518499999999995
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,16,0.22321,0.30037800000000003
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,17,0.20727,0.222632
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,18,0.25702,0.17398799999999995
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,19,0.53038,0.4444645
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,20,0.56193,0.5917250000000001
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,21,0.60634,0.428772
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,22,0.29223,0.334341
+all_equivalent5_ext_20260215,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-09,2026-02-15,holiday:Spring Festival,23,0.2700599999999999,0.2971085
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,0,1.2163,1.079557125
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,1,0.93409,0.769242875
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,2,0.38199,0.5720587500000001
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,3,0.29402,0.3833925
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,4,0.19205,0.26242143749999997
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,5,0.37624,0.29935156249999995
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,6,0.41601,0.43344268750000003
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,7,0.60029,0.7064996874999999
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,8,0.17406,0.302858625
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,9,0.17001,0.2417804375
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,10,0.14355,0.16860487500000002
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,11,0.13389,0.1636095
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,12,0.38625,0.5044158125
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,13,0.3162,0.49600618750000003
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,14,0.1477,0.20144093749999997
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,15,0.13972,0.26159087499999994
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,16,0.15792,0.20845924999999998
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,17,0.13389,0.19375918749999999
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,18,0.14362,0.1800941875
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,19,0.38016,0.49553693750000005
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,20,0.38604,0.49168362499999996
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,21,0.15197,0.3703880625
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,22,0.21989,0.33459606249999996
+all_equivalent5_ext_20260216,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-10,2026-02-16,holiday:Spring Festival,23,0.28615,0.29430456250000003
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,0,0.99592,1.1312645
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,1,0.86587,0.78077175
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,2,0.5299400000000001,0.514972125
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,3,0.35789,0.33042125
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,4,0.19005,0.263305625
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,5,0.1699999999999999,0.312735625
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,6,0.24803,0.45890712499999997
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,7,0.34606,0.743371
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,8,0.27214,0.31292949999999997
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,9,0.25205,0.254175375
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,10,0.16964,0.188124625
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,11,0.18741,0.171666125
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,12,0.49226,0.48187925
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,13,0.47651,0.5355172500000001
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,14,0.2213899999999999,0.264945625
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,15,0.29511,0.30106025000000003
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,16,0.142,0.30797725
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,17,0.19743,0.19552087499999998
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,18,0.10589,0.18441649999999996
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,19,0.46413,0.5012516250000001
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,20,0.43616,0.47937575
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,21,0.3040899999999999,0.37610924999999995
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,22,0.30211,0.33373175
+all_equivalent5_ext_20260217,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-11,2026-02-17,holiday:Spring Festival,23,0.3101,0.293861625
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,0,0.79419,1.140991875
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,1,0.64392,0.7605306875
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,2,0.68992,0.5566716875
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,3,0.4299199999999999,0.35835262500000004
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,4,0.11599,0.25738925
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,5,0.08806,0.32270393750000004
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,6,0.2100199999999999,0.46447012499999996
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,7,0.51017,0.6641107500000001
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,8,0.3059,0.31630043750000003
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,9,0.15796,0.2591706875
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,10,0.15354,0.18862293749999998
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,11,0.17531,0.1829603125
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,12,0.21009,0.497701375
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,13,0.45243,0.5464115625
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,14,0.14561,0.2767839375
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,15,0.11567,0.29579749999999994
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,16,0.12161,0.297232
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,17,0.10583,0.23066112500000002
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,18,0.14567,0.1775111875
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,19,0.48229,0.48775262500000005
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,20,0.28605,0.48714199999999996
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,21,0.29796,0.3649205625
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,22,0.19601,0.3141818125
+all_equivalent5_ext_20260218,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-12,2026-02-18,holiday:Spring Festival,23,0.1541,0.30747
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,0,1.05604,1.130907
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,1,0.6599200000000001,0.757959
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,2,0.37789,0.53665075
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,3,0.23993,0.37442525
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,4,0.10199,0.26217325
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,5,0.25409,0.33020025
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,6,0.31004,0.41448199999999996
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,7,0.74629,0.6483982500000001
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,8,0.2161,0.29296
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,9,0.16597,0.23913799999999996
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,10,0.18136,0.188272
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,11,0.21743,0.16686774999999998
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,12,0.47446,0.48667825
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,13,0.33426,0.5331507500000001
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,14,0.24097,0.243008
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,15,0.23745,0.25036149999999996
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,16,0.11772,0.24548874999999998
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,17,0.1677199999999999,0.21192149999999998
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,18,0.19945,0.171564
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,19,0.37801,0.4770315
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,20,0.32416,0.5280385
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,21,0.21397,0.38258375
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,22,0.27197,0.3242735
+all_equivalent5_ext_20260219,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-13,2026-02-19,holiday:Spring Festival,23,0.35608,0.325951
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,0,1.17996,1.1801154375
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,1,0.8679399999999999,0.8066614375
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,2,0.65791,0.5261285625000001
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,3,0.3359,0.372667375
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,4,0.2821099999999999,0.2619733125
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,5,0.17207,0.325159375
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,6,0.20197,0.403106125
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,7,0.56622,0.7367859375000001
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,8,0.33002,0.293828625
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,9,0.20395,0.22133618749999995
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,10,0.13983,0.19807925
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,11,0.13565,0.1645369375
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,12,0.50431,0.492680875
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,13,0.4843099999999999,0.5574705625
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,14,0.20314,0.24158293750000004
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,15,0.10975,0.2280065625
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,16,0.25088,0.230650375
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,17,0.11594,0.20622925000000003
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,18,0.20952,0.20284681250000003
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,19,0.25809,0.5580201875000002
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,20,0.38803,0.5979898124999999
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,21,0.49581,0.4321286875
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,22,0.27207,0.3384463125
+all_equivalent5_ext_20260220,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-14,2026-02-20,holiday:Spring Festival,23,0.40408,0.31891231249999996
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,0,1.15633,1.2582715000000002
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,1,0.7761199999999999,0.8601466249999999
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,2,0.59189,0.613963375
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,3,0.53796,0.38108374999999994
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,4,0.34796,0.27334775000000006
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,5,0.31608,0.34873037500000015
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,6,0.26999,0.47323987500000003
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,7,0.7363900000000001,0.795269
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,8,0.37987,0.35617275000000004
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,9,0.13401,0.2774638750000001
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,10,0.24365,0.23228775000000007
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,11,0.23539,0.19205524999999998
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,12,0.44028,0.5572632500000001
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,13,0.4363399999999999,0.6254113750000001
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,14,0.18723,0.30388250000000006
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,15,0.18324,0.23952512499999998
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,16,0.21746,0.2776187500000001
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,17,0.19756,0.26106925000000003
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,18,0.20528,0.24527637499999996
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,19,0.45403,0.6803351249999999
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,20,0.45396,0.646177625
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,21,0.34016,0.461506125
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,22,0.26406,0.33453037500000005
+all_equivalent5_ext_20260221,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-15,2026-02-21,holiday:Spring Festival,23,0.27812,0.30634875000000006
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,0,1.70275,1.256478
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,1,0.77997,0.845245625
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,2,0.52198,0.646899
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,3,0.56,0.3836695000000001
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,4,0.45197,0.35101599999999994
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,5,0.35197,0.4845264375
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,6,0.51823,0.5464676875000001
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,7,0.62647,0.7446463125
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,8,0.24995,0.4256563750000001
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,9,0.3041399999999999,0.41509681249999997
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,10,0.20753,0.3064265625
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,11,0.23973,0.1908434375
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,12,0.3741,0.618484875
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,13,0.64446,0.6443976875
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,14,0.15953,0.34997706249999994
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,15,0.16552,0.23380487500000002
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,16,0.2015,0.37513768750000004
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,17,0.0998,0.2622330625
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,18,0.33514,0.210611625
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,19,0.49013,0.634022375
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,20,0.47421,0.6215531874999999
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,21,0.41205,0.4445154375
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,22,0.30211,0.372784625
+all_equivalent5_ext_20260222,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-16,2026-02-22,holiday:Spring Festival,23,0.17604,0.362621125
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,0,1.1843,1.396709
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,1,0.87212,0.853685
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,2,0.464,0.6585995
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,3,0.53599,0.5356814999999999
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,4,0.26796,0.3058065
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,5,0.4861,0.48211099999999996
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,6,0.5741,0.7992005
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,7,0.63037,0.915571
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,8,0.3321199999999999,0.39796699999999996
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,9,0.27407,0.2948775
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,10,0.22926,0.310851
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,11,0.1874299999999999,0.21797149999999998
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,12,0.5324599999999999,0.689947
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,13,0.36211,0.5953395
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,14,0.2412699999999999,0.2475885
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,15,0.34891,0.309313
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,16,0.33069,0.34891
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,17,0.19341,0.2721385
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,18,0.18164,0.210826
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,19,0.58611,0.6786535
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,20,0.51403,0.6033615
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,21,0.4981299999999999,0.49112100000000003
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,22,0.29399,0.461395
+all_equivalent5_ext_20260223,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-17,2026-02-23,holiday:Spring Festival,23,0.27409,0.413246
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,0,1.44243,1.425949
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,1,0.85207,1.022975
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,2,0.67222,0.88907
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,3,0.41613,0.650808
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,4,0.47812,0.758968
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,5,0.53425,0.625769
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,6,0.72013,1.180116
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,7,0.62826,1.3291689999999998
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,8,0.41421,0.565706
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,9,0.25402,0.386523
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,10,0.19949,0.378006
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,11,0.15789,0.302031
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,12,0.69841,0.864702
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,13,0.7785299999999999,0.993288
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,14,0.39875,0.474973
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,15,0.35113,0.351816
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,16,0.27359,0.5708040000000001
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,17,0.23748,0.4004459999999999
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,18,0.3471,0.308392
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,19,0.6381,0.8151430000000001
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,20,0.55606,0.823657
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,21,0.50407,0.737971
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,22,0.46221,0.495756
+all_equivalent5_ext_20260224,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-18,2026-02-24,post_Spring Festival_d1,23,0.27806,0.5569470000000001
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,0,1.36216,1.3088190000000002
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,1,0.85606,0.862092
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,2,0.5241100000000001,0.4577759999999999
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,3,0.6580400000000001,0.480067
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,4,0.44616,0.526716
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,5,0.51217,0.587316
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,6,0.89221,1.176559
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,7,0.89419,1.436738
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,8,0.27198,0.492292
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,9,0.52605,0.472103
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,10,0.19767,0.283144
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,11,0.16178,0.27993
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,12,0.99056,1.213314
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,13,0.70448,0.883923
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,14,0.42111,0.348989
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,15,0.3630799999999999,0.339997
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,16,0.35319,0.539077
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,17,0.31921,0.448797
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,18,0.38515,0.251378
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,19,0.75624,0.830982
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,20,0.83213,0.987255
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,21,0.62405,0.770547
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,22,0.43991,0.6196470000000001
+all_equivalent5_ext_20260225,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-19,2026-02-25,post_Spring Festival_d2,23,0.33004,0.679991
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,0,1.23848,1.484414
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,1,1.03593,0.968829
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,2,0.67404,0.660235
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,3,0.45011,0.590988
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,4,0.68417,0.686325
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,5,0.77418,0.936158
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,6,0.70819,0.985681
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,7,0.99645,1.11767
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,8,0.57216,0.55743
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,9,0.42616,0.366412
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,10,0.2593,0.31525
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,11,0.34718,0.292438
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,12,0.83453,1.488973
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,13,0.78822,1.301956
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,14,0.4153,0.497866
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,15,0.43506,0.371622
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,16,0.39465,0.5067889999999999
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,17,0.32521,0.474356
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,18,0.2891,0.3231509999999999
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,19,0.6322099999999999,0.8998539999999999
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,20,0.78034,1.011968
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,21,0.45809,0.8479829999999999
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,22,0.58612,0.592998
+all_equivalent5_ext_20260226,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-20,2026-02-26,post_Spring Festival_d3,23,0.4663799999999999,0.441481
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,0,1.54278,1.4942054232158397
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,1,0.7661,0.9737255121580555
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,2,0.77597,0.7921959634691313
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,3,0.6220600000000001,0.6346082695140097
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,4,0.46595,0.4471673260312644
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,5,0.46607,0.5978107986859278
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,6,0.99434,0.8517408541280147
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,7,0.86229,1.0420679384778722
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,8,0.51602,0.56548001323439
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,9,0.60607,0.4675523203782952
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,10,0.48885,0.27992825998421145
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,11,0.4249,0.3174938262519381
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,12,1.04626,1.0234202162530945
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,13,0.83859,0.8403547480348753
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,14,0.35167,0.409270420196266
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,15,0.44706,0.35119191058714205
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,16,0.37716,0.4234600224315198
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,17,0.41881,0.36112744985117723
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,18,0.42306,0.39933945540816346
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,19,0.66613,0.8380419639866389
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,20,0.6783399999999999,0.8984875494428883
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,21,0.622,0.6796665153235804
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,22,0.42213,0.5731598916158913
+all_equivalent5_ext_20260227,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-21,2026-02-27,workday_w4,23,0.33607,0.5797679944480735
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,0,1.84904,1.274187293123495
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,1,1.13858,0.8555865367023338
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,2,0.86614,0.8189784501138679
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,3,0.59614,0.6276823955547576
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,4,0.5201100000000001,0.46992798397748337
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,5,0.57425,0.5770262385017989
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,6,0.91038,0.8669640666292111
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,7,0.82823,1.1850003835159508
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,8,0.29406,0.43371780013180133
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,9,0.60194,0.36548259782595
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,10,0.3654199999999999,0.22130001470133687
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,11,0.391,0.34433334866732124
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,12,0.95441,1.0539707322055665
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,13,1.14857,0.8846582131117432
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,14,0.51482,0.3458850757397389
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,15,0.49058,0.393918396192279
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,16,0.39308,0.3967233545415127
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,17,0.39499,0.36266382885469906
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,18,0.38098,0.3541953937083022
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,19,0.96628,0.8605829473428649
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,20,0.6500699999999999,0.794803768533774
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,21,0.9465,0.6251314788684137
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,22,0.63032,0.4612462342866169
+all_equivalent5_ext_20260228,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-22,2026-02-28,makeup_workday_w5,23,0.42369,0.46852906264328187
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,0,1.216,1.670015951952589
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,1,0.864,1.150971936630539
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,2,0.69,0.8144059951994067
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,3,0.804,0.6824453704386655
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,4,0.8280000000000001,0.5311324095541723
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,5,0.6499999999999999,0.6384374369447802
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,6,0.748,0.9424623361039351
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,7,1.0,1.1488069257148283
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,8,0.42,0.46685368950581385
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,9,0.388,0.38176373244457185
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,10,0.308,0.25781297453437646
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,11,0.296,0.29791052554617325
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,12,0.902,0.847250236640712
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,13,0.794,0.7376203971654146
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,14,0.492,0.3412626584987849
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,15,0.4579999999999999,0.36900680938260516
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,16,0.366,0.3814604520394758
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,17,0.27,0.3240261201941717
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,18,0.438,0.3669549617703224
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,19,1.07,0.7960483512202132
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,20,0.798,0.8707074382434694
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,21,0.438,0.7171688088741159
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,22,0.498,0.5064662721153301
+all_equivalent5_ext_20260301,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-23,2026-03-01,weekend_w6,23,0.4599999999999999,0.4829224626448376
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,0,1.394,1.567427582383203
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,1,1.074,1.0670146848299333
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,2,0.67,0.9546928454345197
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,3,0.472,0.685000727522987
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,4,0.636,0.5597077117693705
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,5,0.484,0.6966260914071215
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,6,0.744,0.9496076992031084
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,7,1.058,1.0473141430166777
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,8,0.744,0.522381851897086
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,9,0.53,0.4688281393784491
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,10,0.3319999999999999,0.3018027494820399
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,11,0.364,0.39265851167862165
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,12,1.276,1.0405516818564136
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,13,0.8380000000000001,0.8240080881526879
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,14,0.244,0.3478398615201168
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,15,0.266,0.34366761916064636
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,16,0.262,0.38802604623690445
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,17,0.284,0.3256634525811351
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,18,0.344,0.3789442394101977
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,19,0.532,0.8296588349371887
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,20,0.716,0.9470126062647194
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,21,0.592,0.6646290883860089
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,22,0.872,0.531865548480037
+all_equivalent5_ext_20260302,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-24,2026-03-02,workday_w0,23,0.456,0.4760372640036492
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,0,1.608,1.6561311647181973
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,1,1.048,1.076978925003166
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,2,0.676,0.8044526343553151
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,3,0.618,0.6130959388971556
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,4,0.61,0.5140877271913686
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,5,0.65,0.6545735323589232
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,6,0.932,0.9032390711216756
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,7,1.11,1.144840145181482
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,8,0.732,0.5552318937066993
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,9,0.62,0.5652326759343942
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,10,0.254,0.24729463484011713
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,11,0.35,0.30787109431852333
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,12,1.24,1.047164952612325
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,13,0.628,0.8775208490010733
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,14,0.244,0.37990513157450445
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,15,0.294,0.3430641688837158
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,16,0.3419999999999999,0.42767785433494065
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,17,0.352,0.3853146643997872
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,18,0.466,0.3707677967138641
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,19,0.478,0.8469387160516424
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,20,0.73,0.9257865848489937
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,21,0.5760000000000001,0.7681857544934596
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,22,0.484,0.5441418051275333
+all_equivalent5_ext_20260303,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-25,2026-03-03,workday_w1,23,0.374,0.5519947299533019
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,0,1.696,1.6040317360589382
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,1,1.034,1.1080045830692002
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,2,0.632,0.8381444203036218
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,3,0.55,0.6940812058290715
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,4,0.562,0.5528598220992809
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,5,0.536,0.6646879094076459
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,6,0.8400000000000001,0.9197751716114938
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,7,1.002,1.0965021332082683
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,8,0.6859999999999999,0.5436753626494835
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,9,0.708,0.4951885618544949
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,10,0.402,0.31404158797682513
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,11,0.286,0.3510567076869434
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,12,1.568,1.0718308282434175
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,13,0.784,0.9557310209154498
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,14,0.37,0.38518472261589376
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,15,0.188,0.36848020901328143
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,16,0.378,0.4259057434632588
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,17,0.544,0.37093470993924427
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,18,0.3379999999999999,0.37659048507110193
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,19,0.7,0.7836393788350308
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,20,0.748,0.9915894431582248
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,21,0.766,0.8062707429956277
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,22,0.516,0.6317143199524028
+all_equivalent5_ext_20260304,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-26,2026-03-04,workday_w2,23,0.448,0.5325038920403702
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,0,2.138,1.557471168884602
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,1,1.108,1.0830920058670925
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,2,0.682,0.8811975329191399
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,3,0.644,0.729617574322591
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,4,0.62,0.6294066021784794
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,5,0.6260000000000001,0.6987744124691031
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,6,0.91,1.0427121694112857
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,7,1.268,1.181160877320262
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,8,0.698,0.6315732225573649
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,9,0.752,0.6294333924512443
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,10,0.276,0.3438104877881201
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,11,0.316,0.4111108788198842
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,12,1.236,1.2242931001061277
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,13,1.162,0.9878759275439815
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,14,0.412,0.41533187801494087
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,15,0.424,0.4295476061207643
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,16,0.466,0.4171788147055855
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,17,0.506,0.41044077459242506
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,18,0.48,0.3901230538397995
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,19,0.978,0.8848845495396724
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,20,1.232,0.9290002168687417
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,21,0.792,0.7341836763603438
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,22,0.548,0.612216221698686
+all_equivalent5_ext_20260305,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-27,2026-03-05,workday_w3,23,0.546,0.5361827733973754
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,0,1.56,1.6305745460967223
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,1,0.902,1.0844122849732174
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,2,0.8920000000000001,0.875246202013533
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,3,0.6539999999999999,0.7757917285705551
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,4,0.68,0.7011683200458146
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,5,0.562,0.7923931440864602
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,6,1.15,1.0391992086791215
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,7,1.1920000000000002,1.127413138643804
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,8,0.964,0.6102381493060811
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,9,0.8999999999999999,0.5581578772998907
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,10,0.344,0.354449746496474
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,11,0.376,0.39915440274380765
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,12,1.56,1.220089535083137
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,13,1.15,1.0685804443371691
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,14,0.494,0.4614310776163618
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,15,0.586,0.45389142298548046
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,16,0.478,0.43989911756842204
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,17,0.544,0.436247966003412
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,18,0.532,0.41192958183960515
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,19,1.06,0.9073427526061424
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,20,0.806,0.9817655673785031
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,21,0.6699999999999999,0.8508973135531376
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,22,0.642,0.6483724838389814
+all_equivalent5_ext_20260306,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-02-28,2026-03-06,workday_w4,23,0.632,0.5760334066798176
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,0,1.942,1.752828220061028
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,1,1.618,1.195853315204074
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,2,1.038,0.9679349725279061
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,3,0.878,0.7777958980939743
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,4,0.794,0.6847536228024587
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,5,0.522,0.7657426240091931
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,6,0.854,1.0454799879894623
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,7,1.3199999999999998,1.1324508503641721
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,8,0.658,0.5944491366051983
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,9,0.666,0.6071779953037899
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,10,0.354,0.33557437792887157
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,11,0.354,0.3668513959127574
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,12,1.33,1.0802340889844455
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,13,1.12,1.0451611210293672
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,14,0.378,0.5117167537538907
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,15,0.56,0.4641214156884721
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,16,0.382,0.5136210495668438
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,17,0.43,0.42773846556831496
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,18,0.252,0.44168065725899935
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,19,0.8320000000000001,0.9682974643998604
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,20,0.8160000000000001,0.9070363272198125
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,21,0.6679999999999999,0.7252515817663885
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,22,0.722,0.5978327415584959
+all_equivalent5_ext_20260307,all_equivalent5_ext,五家公司等价总量扩展版,广东,2026-03-01,2026-03-07,weekend_w5,23,0.5740000000000001,0.5528082531267543

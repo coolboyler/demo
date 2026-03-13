@@ -1,0 +1,105 @@
+# 假期分流模型评估
+
+- 数据集：`new/baseline_d6_dataset.csv`
+- 普通日走规则 D-6。
+- 节假日前后和节日本身按节日家族路由，只有训练回测优于基线的家族才激活。
+- 纯调休工作日 `makeup_workday_w*` 单独走调休专模。
+
+## 家族激活结果
+| holiday_family | train_rows | special_daily_accuracy_percent | base_daily_accuracy_percent | accuracy_lift_percent | is_active |
+| --- | --- | --- | --- | --- | --- |
+| Dragon Boat Festival | 9 | 94.07796922873476 | 91.47916884006911 | 2.5988003886656514 | 1 |
+| Labour Day | 11 | 95.77863639638134 | 92.68310052861388 | 3.0955358677674667 | 1 |
+| Mid-autumn Festival | 2 | 88.17533711850903 | 81.69434558424314 | 6.480991534265897 | 1 |
+| National Day | 12 | 90.26276226729323 | 88.34901841842635 | 1.913743848866872 | 1 |
+| Spring Festival | 14 | 82.34559742453267 | 38.03675519880287 | 44.3088422257298 | 1 |
+| Tomb-sweeping Day | 9 | 92.76623283645763 | 88.1946743639813 | 4.571558472476326 | 1 |
+| __generic_makeup__ | 3 | 95.1776531540067 | 80.04992257139007 | 15.127730582616636 | 1 |
+| New Year's Day | 3 | 89.15209015379224 | 95.40211648997663 | -6.250026336184391 | 0 |
+| __ordinary_weekend__ | 162 | 94.84952538998861 | 93.83515109517496 | 1.0143742948136492 | 1 |
+| __ordinary_workday__ | 406 | 93.91774575893324 | 93.15026443386365 | 0.767481325069582 | 1 |
+
+## 总体分段评估
+| model_variant | segment | days | hourly_accuracy_percent | daily_accuracy_percent | daily_bias_percent |
+| --- | --- | --- | --- | --- | --- |
+| base_rule_d6 | validation | 31 | 85.89407480486926 | 92.22067559543007 | -4.887229196754868 |
+| base_rule_d6 | test | 35 | 63.387531057604676 | 66.52089995562307 | 9.851838450936933 |
+| holiday_router | validation | 31 | 86.46156964863584 | 92.70597013277339 | -3.835613519225192 |
+| holiday_router | test | 35 | 78.40484222051836 | 85.93568388368477 | 11.141248461272344 |
+
+## 月度评估
+| model_variant | split | year_month | days | hourly_accuracy_percent | daily_accuracy_percent | daily_bias_percent |
+| --- | --- | --- | --- | --- | --- | --- |
+| base_rule_d6 | validation | 2026-01 | 31 | 85.89407480486926 | 92.22067559543007 | -4.887229196754868 |
+| base_rule_d6 | test | 2026-02 | 28 | 61.450713868509766 | 65.31147122344393 | 21.74354382642187 |
+| base_rule_d6 | test | 2026-03 | 7 | 69.79339682522883 | 70.52098739674484 | -29.479012603255157 |
+| holiday_router | validation | 2026-01 | 31 | 86.46156964863584 | 92.70597013277339 | -3.835613519225192 |
+| holiday_router | test | 2026-02 | 28 | 76.93921699467649 | 83.18002925575483 | 14.30793443400307 |
+| holiday_router | test | 2026-03 | 7 | 83.25227878564627 | 95.04978806855136 | 0.6676914401212446 |
+
+## 被路由的日期
+| target_date | split | holiday_family | holiday_segment | route_name | actual_daily_total | pred_daily_total | similar_reference_dates | similar_reference_tags | similar_reference_scores | similar_reference_weights |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 2026-01-07 00:00:00 | validation |  | other | ordinary_similar:workday | 21.898159999999997 | 19.69128218674014 | 2025-01-08|2024-12-25|2025-01-15 | after:New Year's Day:w1|before:New Year's Day:w1|before:Spring Festival:w2 | 48.666667|24.916667|24.583333 | 0.495756|0.253820|0.250424 |
+| 2026-01-08 00:00:00 | validation |  | other | ordinary_similar:workday | 21.7565 | 20.316678185015352 | 2025-01-09|2024-12-26|2025-01-16 | after:New Year's Day:w2|before:New Year's Day:w1|before:Spring Festival:w2 | 37.166667|24.916667|24.583333 | 0.428846|0.287500|0.283654 |
+| 2026-01-09 00:00:00 | validation |  | other | ordinary_similar:workday | 22.876199999999997 | 20.903005615150143 | 2025-01-10|2024-12-27|2025-01-17 | after:New Year's Day:w2|before:New Year's Day:w1|before:Spring Festival:w2 | 37.166667|24.916667|24.583333 | 0.428846|0.287500|0.283654 |
+| 2026-01-10 00:00:00 | validation |  | other | ordinary_similar:weekend | 22.73238 | 21.04228586340435 | 2025-01-11|2024-12-28|2025-01-18 | after:New Year's Day:w2|before:New Year's Day:w1|before:Spring Festival:w2 | 37.166667|24.916667|24.583333 | 0.428846|0.287500|0.283654 |
+| 2026-01-11 00:00:00 | validation |  | other | ordinary_similar:weekend | 20.61355 | 20.382622370983388 | 2025-01-12|2025-01-05|2025-01-19 | after:New Year's Day:w2|after:New Year's Day:w1|before:Spring Festival:w2 | 48.666667|31.250000|27.083333 | 0.454829|0.292056|0.253115 |
+| 2026-01-12 00:00:00 | validation |  | other | ordinary_similar:workday | 23.25063 | 20.946458903635847 | 2025-01-13|2025-01-06|2025-01-20 | after:New Year's Day:w2|after:New Year's Day:w1|before:Spring Festival:w2 | 48.666667|31.250000|27.083333 | 0.454829|0.292056|0.253115 |
+| 2026-01-13 00:00:00 | validation |  | other | ordinary_similar:workday | 19.174239999999998 | 21.1572926449234 | 2025-01-14|2025-01-07|2025-01-21 | after:New Year's Day:w2|after:New Year's Day:w1|before:Spring Festival:w1 | 48.666667|31.250000|24.583333 | 0.465710|0.299043|0.235247 |
+| 2026-01-14 00:00:00 | validation |  | other | ordinary_similar:workday | 20.198790000000002 | 21.182866244352883 | 2025-01-15|2025-01-08|2026-01-07 | before:Spring Festival:w2|after:New Year's Day:w1|after:New Year's Day:w1 | 33.666667|31.250000|25.494444 | 0.372373|0.345643|0.281984 |
+| 2026-01-15 00:00:00 | validation |  | other | ordinary_similar:workday | 19.85837 | 21.933783066622333 | 2025-01-09|2025-01-16|2026-01-08 | after:New Year's Day:w2|before:Spring Festival:w2|after:New Year's Day:w1 | 42.750000|33.666667|25.494444 | 0.419483|0.330353|0.250164 |
+| 2026-01-16 00:00:00 | validation |  | other | ordinary_similar:workday | 21.82803 | 22.401140280576634 | 2025-01-10|2025-01-17|2026-01-09 | after:New Year's Day:w2|before:Spring Festival:w2|after:New Year's Day:w1 | 42.750000|33.666667|25.494444 | 0.419483|0.330353|0.250164 |
+| 2026-01-17 00:00:00 | validation |  | other | ordinary_similar:weekend | 21.02342 | 22.41291906265125 | 2025-01-11|2025-01-18|2026-01-10 | after:New Year's Day:w2|before:Spring Festival:w2|after:New Year's Day:w1 | 42.750000|33.666667|25.494444 | 0.419483|0.330353|0.250164 |
+| 2026-01-18 00:00:00 | validation |  | other | ordinary_similar:weekend | 19.27119 | 21.458896379413666 | 2025-01-12|2025-01-19|2025-01-05 | after:New Year's Day:w2|before:Spring Festival:w2|after:New Year's Day:w1 | 31.250000|31.166667|27.166667 | 0.348837|0.347907|0.303256 |
+| 2026-01-19 00:00:00 | validation |  | other | ordinary_similar:workday | 19.85026 | 21.450451260257047 | 2025-01-13|2025-01-20|2025-01-06 | after:New Year's Day:w2|before:Spring Festival:w2|after:New Year's Day:w1 | 31.250000|31.166667|27.166667 | 0.348837|0.347907|0.303256 |
+| 2026-01-20 00:00:00 | validation |  | other | ordinary_similar:workday | 20.561059999999998 | 21.1651875518781 | 2025-01-14|2025-01-21|2025-01-07 | after:New Year's Day:w2|before:Spring Festival:w1|after:New Year's Day:w1 | 31.250000|31.166667|27.166667 | 0.348837|0.347907|0.303256 |
+| 2026-01-21 00:00:00 | validation |  | other | ordinary_similar:workday | 20.95184 | 20.530656988756014 | 2025-01-22|2025-01-08|2026-01-14 | before:Spring Festival:w1|after:New Year's Day:w1|after:New Year's Day:w2 | 31.166667|27.166667|25.494444 | 0.371794|0.324077|0.304129 |
+| 2026-01-22 00:00:00 | validation |  | other | ordinary_similar:workday | 22.40477 | 20.634506951772046 | 2025-01-23|2025-01-09|2026-01-15 | before:Spring Festival:w1|after:New Year's Day:w2|after:New Year's Day:w2 | 31.166667|27.166667|25.494444 | 0.371794|0.324077|0.304129 |
+| 2026-01-23 00:00:00 | validation |  | other | ordinary_similar:workday | 24.30826 | 21.07457222645535 | 2025-01-24|2025-01-10|2026-01-16 | before:Spring Festival:w1|after:New Year's Day:w2|after:New Year's Day:w2 | 31.166667|27.166667|25.494444 | 0.371794|0.324077|0.304129 |
+| 2026-01-24 00:00:00 | validation |  | other | ordinary_similar:weekend | 23.16856 | 21.52906238138062 | 2025-01-11|2026-01-17|2026-01-10 | after:New Year's Day:w2|after:New Year's Day:w2|after:New Year's Day:w1 | 27.166667|25.494444|25.455556 | 0.347770|0.326364|0.325866 |
+| 2026-01-25 00:00:00 | validation |  | other | ordinary_similar:weekend | 20.679879999999997 | 20.343361946389614 | 2025-01-19|2024-01-28|2025-02-23 | before:Spring Festival:w2|before:Spring Festival:w2|after:Spring Festival:w3 | 31.250000|25.500000|23.750000 | 0.388199|0.316770|0.295031 |
+| 2026-01-26 00:00:00 | validation |  | other | ordinary_similar:workday | 20.56451 | 19.995799622879456 | 2024-01-22|2025-01-20|2024-01-29 | before:Spring Festival:w3|before:Spring Festival:w2|before:Spring Festival:w2 | 36.500000|31.250000|25.500000 | 0.391421|0.335121|0.273458 |
+| 2026-01-27 00:00:00 | validation |  | other | ordinary_similar:workday | 21.13734 | 19.637733002699157 | 2024-01-23|2025-01-21|2024-01-30 | before:Spring Festival:w3|before:Spring Festival:w1|before:Spring Festival:w2 | 36.500000|31.250000|25.500000 | 0.391421|0.335121|0.273458 |
+| 2026-01-28 00:00:00 | validation |  | other | ordinary_similar:workday | 20.84298 | 20.218955005861112 | 2024-01-24|2025-01-22|2025-01-15 | before:Spring Festival:w3|before:Spring Festival:w1|before:Spring Festival:w2 | 36.500000|31.250000|27.166667 | 0.384548|0.329236|0.286216 |
+| 2026-01-29 00:00:00 | validation |  | other | ordinary_similar:workday | 21.90897 | 20.82297669063987 | 2024-01-25|2025-01-23|2025-01-16 | before:Spring Festival:w3|before:Spring Festival:w1|before:Spring Festival:w2 | 36.500000|31.250000|27.166667 | 0.384548|0.329236|0.286216 |
+| 2026-01-30 00:00:00 | validation |  | other | ordinary_similar:workday | 22.821150000000003 | 21.190697026225056 | 2024-01-26|2025-01-24|2025-01-17 | before:Spring Festival:w3|before:Spring Festival:w1|before:Spring Festival:w2 | 36.500000|31.250000|27.166667 | 0.384548|0.329236|0.286216 |
+| 2026-01-31 00:00:00 | validation |  | other | ordinary_similar:weekend | 23.40912 | 21.921032854289862 | 2025-01-18|2024-01-27|2026-01-24 | before:Spring Festival:w2|before:Spring Festival:w2|after:New Year's Day:w3 | 27.166667|25.000000|21.994444 | 0.366320|0.337104|0.296577 |
+| 2026-02-01 00:00:00 | test |  | other | ordinary_similar:weekend | 21.89283 | 20.56883285814063 | 2025-01-19|2024-01-28|2025-02-09 | before:Spring Festival:w2|before:Spring Festival:w2|after:Spring Festival:w1 | 35.916667|32.750000|28.583333 | 0.369323|0.336761|0.293916 |
+| 2026-02-02 00:00:00 | test |  | other | ordinary_similar:workday | 21.27295 | 20.905843719332527 | 2025-01-20|2024-01-29|2025-02-10 | before:Spring Festival:w2|before:Spring Festival:w2|after:Spring Festival:w1 | 35.916667|32.750000|28.583333 | 0.369323|0.336761|0.293916 |
+| 2026-02-03 00:00:00 | test |  | other | ordinary_similar:workday | 21.39495 | 20.75813865834724 | 2024-01-30|2025-02-11|2025-02-18 | before:Spring Festival:w2|after:Spring Festival:w1|after:Spring Festival:w2 | 32.750000|28.583333|27.000000 | 0.370755|0.323585|0.305660 |
+| 2026-02-04 00:00:00 | test |  | other | ordinary_similar:workday | 21.1545 | 20.396916019127787 | 2024-01-31|2025-01-15|2025-02-12 | before:Spring Festival:w2|before:Spring Festival:w2|after:Spring Festival:w2 | 32.750000|32.750000|31.083333 | 0.339085|0.339085|0.321829 |
+| 2026-02-05 00:00:00 | test |  | other | ordinary_similar:workday | 17.9337 | 22.016530888498743 | 2024-02-01|2025-01-16|2025-02-13 | before:Spring Festival:w2|before:Spring Festival:w2|after:Spring Festival:w2 | 36.500000|32.750000|31.083333 | 0.363787|0.326412|0.309801 |
+| 2026-02-06 00:00:00 | test |  | other | ordinary_similar:workday | 18.61031 | 21.9956227515196 | 2024-02-02|2025-01-17|2025-02-14 | before:Spring Festival:w2|before:Spring Festival:w2|after:Spring Festival:w2 | 36.500000|32.750000|31.083333 | 0.363787|0.326412|0.309801 |
+| 2026-02-07 00:00:00 | test |  | other | ordinary_similar:weekend | 18.38561 | 21.66411448190324 | 2024-01-27|2025-01-18|2025-02-15 | before:Spring Festival:w2|before:Spring Festival:w2|after:Spring Festival:w2 | 32.750000|32.750000|31.083333 | 0.339085|0.339085|0.321829 |
+| 2026-02-08 00:00:00 | test |  | other | ordinary_similar:weekend | 16.34228 | 21.351422875849572 | 2025-02-09|2025-02-16|2026-02-01 | after:Spring Festival:w1|after:Spring Festival:w2|before:Spring Festival:w2 | 37.666667|28.583333|25.494444 | 0.410561|0.311554|0.277885 |
+| 2026-02-09 00:00:00 | test |  | other | ordinary_similar:workday | 17.56915 | 22.06537453113785 | 2025-02-10|2024-02-05|2025-02-17 | after:Spring Festival:w1|before:Spring Festival:w1|after:Spring Festival:w2 | 37.666667|36.500000|28.583333 | 0.366586|0.355231|0.278183 |
+| 2026-02-10 00:00:00 | test |  | other | ordinary_similar:workday | 15.99161 | 21.419446220550782 | 2025-02-11|2024-02-06|2025-01-21 | after:Spring Festival:w1|before:Spring Festival:w1|before:Spring Festival:w1 | 37.666667|36.500000|32.750000 | 0.352299|0.341387|0.306313 |
+| 2026-02-11 00:00:00 | test |  | other | ordinary_similar:workday | 13.78684 | 20.65180193161399 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-12 00:00:00 | test | Spring Festival | pre | holiday_family:Spring Festival | 13.21376 | 14.83001 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-13 00:00:00 | test | Spring Festival | pre | holiday_family:Spring Festival | 12.43164 | 13.488249 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-14 00:00:00 | test | Spring Festival | pre | holiday_family:Spring Festival | 11.46252 | 13.163753 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-15 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 10.48265 | 10.399714 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-16 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 7.88201 | 9.41509575 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-17 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 8.33218 | 9.718291624999999 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-18 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 6.98822 | 9.755841 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-19 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 7.8432699999999995 | 9.5224845 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-20 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 8.769459999999999 | 9.895343250000002 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-21 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 9.38336 | 11.0009765 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-22 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 10.34928 | 11.727115375 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-23 00:00:00 | test | Spring Festival | holiday | holiday_family:Spring Festival | 10.394659999999998 | 12.4908705 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-24 00:00:00 | test | Spring Festival | post | holiday_family:Spring Festival | 12.29271 | 16.908984999999998 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-25 00:00:00 | test | Spring Festival | post | holiday_family:Spring Festival | 13.82173 | 16.277449 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-26 00:00:00 | test | Spring Festival | post | holiday_family:Spring Festival | 14.57156 | 17.720827 | 2025-02-12|2025-01-22|2025-02-19 | after:Spring Festival:w2|before:Spring Festival:w1|after:Spring Festival:w3 | 35.166667|32.750000|28.583333 | 0.364421|0.339378|0.296200 |
+| 2026-02-27 00:00:00 | test |  | other | ordinary_similar:workday | 15.15868 | 15.84126464310826 | 2025-02-28|2024-02-23|2025-02-21 | after:Spring Festival:w4|after:Spring Festival:w1|after:Spring Festival:w3 | 37.166667|36.500000|31.250000 | 0.354249|0.347895|0.297855 |
+| 2026-02-28 00:00:00 | test |  | other | generic_makeup | 16.82958 | 15.0424955954741 | 2025-02-28|2024-02-23|2025-02-21 | after:Spring Festival:w4|after:Spring Festival:w1|after:Spring Festival:w3 | 37.166667|36.500000|31.250000 | 0.354249|0.347895|0.297855 |
+| 2026-03-01 00:00:00 | test |  | other | ordinary_similar:weekend | 15.195999999999998 | 15.723914253359306 | 2025-03-02|2025-02-09|2025-02-23 | after:Spring Festival:w4|after:Spring Festival:w1|after:Spring Festival:w3 | 37.166667|32.750000|28.500000 | 0.377646|0.332769|0.289585 |
+| 2026-03-02 00:00:00 | test |  | other | ordinary_similar:workday | 15.184 | 16.310967068992824 | 2025-03-03|2025-02-10|2025-02-24 | after:Spring Festival:w4|after:Spring Festival:w1|after:Spring Festival:w3 | 37.166667|32.750000|28.500000 | 0.377646|0.332769|0.289585 |
+| 2026-03-03 00:00:00 | test |  | other | ordinary_similar:workday | 15.416 | 16.51149244562216 | 2025-03-04|2025-02-18|2024-02-27 | after:Spring Festival:w4|after:Spring Festival:w2|after:Spring Festival:w2 | 37.166667|35.916667|32.750000 | 0.351181|0.339370|0.309449 |
+| 2026-03-04 00:00:00 | test |  | other | ordinary_similar:workday | 16.281999999999996 | 16.882424697998573 | 2024-02-28|2025-02-12|2025-03-05 | after:Spring Festival:w2|after:Spring Festival:w2|ordinary:workday | 32.750000|32.750000|31.166667 | 0.338793|0.338793|0.322414 |
+| 2026-03-05 00:00:00 | test |  | other | ordinary_similar:workday | 18.82 | 17.790618917777614 | 2024-02-29|2025-02-13|2025-03-06 | after:Spring Festival:w2|after:Spring Festival:w2|ordinary:workday | 32.750000|32.750000|31.166667 | 0.338793|0.338793|0.322414 |
+| 2026-03-06 00:00:00 | test |  | other | ordinary_similar:workday | 19.33 | 18.404679418445653 | 2024-03-01|2025-02-14|2025-03-07 | after:Spring Festival:w2|after:Spring Festival:w2|before:Tomb-sweeping Day:w4 | 36.000000|32.750000|31.166667 | 0.360300|0.327773|0.311927 |
+| 2026-03-07 00:00:00 | test |  | other | ordinary_similar:weekend | 19.061999999999998 | 18.462392316724532 | 2024-03-02|2025-02-15|2025-03-01 | after:Spring Festival:w2|after:Spring Festival:w2|after:Spring Festival:w4 | 36.000000|32.750000|31.250000 | 0.360000|0.327500|0.312500 |
+
+- 预测输出：`/Users/cayron/work/load_pred/delivery_d6_pipeline/results/best_d6_test_daily.csv`
+- 摘要输出：`/Users/cayron/work/load_pred/delivery_d6_pipeline/results/best_d6_summary.json`

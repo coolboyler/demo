@@ -14,5 +14,5 @@ htmlcov/
 
 *.log
 
-data/store.json
-
+data/generated/
+data/uploads/
