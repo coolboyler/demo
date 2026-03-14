@@ -18,6 +18,15 @@
 
     <main class="container-shell app-layout">
       <aside class="sidebar-stack">
+        <section class="dashboard-card">
+          <div class="card-header-row">
+            <h5 class="card-title">站点切换</h5>
+            <span class="help-text">上传与展示彼此独立</span>
+          </div>
+          <div id="siteSwitcher" class="site-switcher"></div>
+          <div id="siteSwitchHint" class="help-text status-line">切换站点后会同步刷新页面与上传入口</div>
+        </section>
+
         <section class="dashboard-card control-card">
           <div class="card-header-row">
             <h5 class="card-title">运行状态</h5>
@@ -80,30 +89,54 @@
         <section class="dashboard-card form-card">
           <div class="card-header-row">
             <h5 class="card-title">上传 D-6 实际</h5>
-            <a class="inline-link" href="/api/actual-template">模板</a>
+            <a id="actualTemplateLink" class="inline-link" href="/api/actual-template">模板</a>
           </div>
-          <form id="actualUploadForm" class="data-form">
-            <label class="field-block">
-              <span class="label-muted">实际日期</span>
-              <input id="actualDateInput" name="actual_date" type="date" required />
-            </label>
-            <label class="field-block">
-              <span class="label-muted">上传 CSV</span>
-              <input id="actualFileInput" name="actual_file" type="file" accept=".csv" />
-            </label>
-            <label class="field-block">
-              <span class="label-muted">或直接粘贴 24 个值</span>
-              <textarea
-                id="rawValuesInput"
-                name="raw_values"
-                rows="5"
-                placeholder="支持空格、换行、逗号分隔，必须正好 24 个分时值"
-              ></textarea>
-            </label>
-            <div class="toolbar-row">
-              <button type="submit" class="btn btn-primary-lite full-width">更新历史并生成下一次 D 日预测</button>
+          <div id="uploadGuardCard" class="upload-guard">
+            <div class="upload-guard-head">
+              <strong id="uploadGuardBadge" class="upload-guard-badge">待检查</strong>
+              <span id="uploadGuardToday" class="help-text">系统日期 -</span>
             </div>
-          </form>
+            <div id="uploadGuardText" class="upload-guard-text">正在读取上传状态...</div>
+            <div class="upload-flow-grid">
+              <div class="upload-flow-item">
+                <span class="label-muted">今日上传任务目标日</span>
+                <strong id="uploadWorkflowTargetDate">-</strong>
+              </div>
+              <div class="upload-flow-item">
+                <span class="label-muted">今日应处理的 D-6 实际日</span>
+                <strong id="uploadWorkflowActualDate">-</strong>
+              </div>
+              <div class="upload-flow-item upload-flow-wide">
+                <span class="label-muted">下一步</span>
+                <strong id="uploadNextStepText">-</strong>
+              </div>
+            </div>
+            <div id="uploadGuardHint" class="help-text">-</div>
+          </div>
+          <div id="uploadFormWrap" class="upload-form-wrap">
+            <form id="actualUploadForm" class="data-form">
+              <label class="field-block">
+                <span class="label-muted">实际日期</span>
+                <input id="actualDateInput" name="actual_date" type="date" required />
+              </label>
+              <label class="field-block">
+                <span class="label-muted">上传 CSV</span>
+                <input id="actualFileInput" name="actual_file" type="file" accept=".csv" />
+              </label>
+              <label class="field-block">
+                <span class="label-muted">或直接粘贴 24 个值</span>
+                <textarea
+                  id="rawValuesInput"
+                  name="raw_values"
+                  rows="5"
+                  placeholder="支持空格、换行、逗号分隔，必须正好 24 个分时值"
+                ></textarea>
+              </label>
+              <div class="toolbar-row">
+                <button id="uploadSubmitButton" type="submit" class="btn btn-primary-lite full-width">提交本次 D-6 实际并生成目标日预测</button>
+              </div>
+            </form>
+          </div>
           <div id="uploadStatus" class="help-text status-line"></div>
         </section>
 

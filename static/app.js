@@ -1,4 +1,5 @@
 const state = {
+  selectedSite: null,
   selectedDate: null,
 };
 
@@ -158,6 +159,22 @@ function renderMonthlyCards(monthly) {
   `).join('');
 }
 
+function renderSiteSwitcher(sites, activeSite) {
+  const container = document.getElementById('siteSwitcher');
+  if (!container) return;
+  container.innerHTML = (sites || []).map((site) => `
+    <button
+      type="button"
+      class="site-switch-button ${site.code === activeSite ? 'active' : ''}"
+      data-site-code="${site.code}"
+    >
+      <span>${site.name}</span>
+      <small>${site.code}</small>
+    </button>
+  `).join('');
+  setText('siteSwitchHint', activeSite ? `当前站点 ${sites.find((site) => site.code === activeSite)?.name || activeSite}，上传与展示数据互相独立。` : '切换站点后会同步刷新页面与上传入口');
+}
+
 function renderHistoryTable(rows) {
   const body = document.getElementById('recentTableBody');
   if (!body) return;
@@ -223,11 +240,65 @@ function renderCopyPanel(record) {
   setText('copyModelStatus', copyTextValue ? '已按 Excel 横向粘贴格式生成 24 个点' : '当前日期没有可复制的模型电量');
 }
 
+function updateTemplateLink(siteCode) {
+  const link = document.getElementById('actualTemplateLink');
+  if (!link) return;
+  const url = new URL('/api/actual-template', window.location.origin);
+  url.searchParams.set('site', siteCode);
+  link.href = url.toString();
+}
+
+function renderUploadContext(uploadContext = {}) {
+  const form = document.getElementById('actualUploadForm');
+  const formWrap = document.getElementById('uploadFormWrap');
+  const actualDateInput = document.getElementById('actualDateInput');
+  const actualFileInput = document.getElementById('actualFileInput');
+  const rawValuesInput = document.getElementById('rawValuesInput');
+  const submitButton = document.getElementById('uploadSubmitButton');
+  const guardCard = document.getElementById('uploadGuardCard');
+  const guardBadge = document.getElementById('uploadGuardBadge');
+  const status = document.getElementById('uploadStatus');
+  if (!form || !formWrap || !actualDateInput || !actualFileInput || !rawValuesInput || !submitButton || !guardCard || !guardBadge) return;
+
+  const isLocked = Boolean(uploadContext.is_locked_today);
+  form.dataset.lockedToday = isLocked ? 'true' : 'false';
+  form.dataset.lockMessage = uploadContext.helper_text || '';
+
+  actualDateInput.value = uploadContext.workflow_actual_date || uploadContext.expected_actual_date || '';
+  actualDateInput.disabled = isLocked;
+  actualFileInput.disabled = isLocked;
+  rawValuesInput.disabled = isLocked;
+  submitButton.disabled = isLocked;
+  submitButton.textContent = isLocked ? '今日上传已完成' : '提交本次 D-6 实际并生成目标日预测';
+
+  guardCard.classList.toggle('locked', isLocked);
+  guardCard.classList.toggle('ready', !isLocked);
+  formWrap.hidden = isLocked;
+  guardBadge.textContent = isLocked ? '今日上传已完成' : '当前待上传';
+  setText('uploadGuardToday', `系统日期 ${uploadContext.server_today || '-'}`);
+  setText('uploadGuardText', uploadContext.status_text || '-');
+  setText('uploadWorkflowTargetDate', uploadContext.workflow_target_date || '-');
+  setText('uploadWorkflowActualDate', uploadContext.workflow_actual_date || '-');
+  setText('uploadNextStepText', uploadContext.next_step_text || '-');
+  setText('uploadGuardHint', uploadContext.helper_text || '-');
+  if (status) {
+    if (isLocked && !status.textContent) {
+      status.textContent = uploadContext.status_text || '';
+    }
+    if (!isLocked) {
+      status.textContent = '';
+    }
+  }
+}
+
 function renderDashboard(payload) {
   const record = payload.selected_record;
   const accuracy = payload.accuracy;
+  state.selectedSite = payload.site_code;
   state.selectedDate = payload.selected_date;
 
+  renderSiteSwitcher(payload.available_sites || [], payload.site_code);
+  updateTemplateLink(payload.site_code);
   setText('siteName', payload.site_name);
   setText('asOfActualDate', payload.max_actual_date);
   setText('currentTargetDate', payload.current_target_date);
@@ -249,19 +320,43 @@ function renderDashboard(payload) {
   setText('selectedMonthHint', `当前月份 ${accuracy.selected_month?.month || '-'}，已核验 ${accuracy.selected_month?.matched_days_count || 0} 天 / 展示 ${accuracy.selected_month?.days_count || 0} 天`);
   setText('selectedDateHint', `当前查看 ${payload.selected_date}`);
 
-  const actualDateInput = document.getElementById('actualDateInput');
-  if (actualDateInput) actualDateInput.value = payload.next_upload_date;
-
   renderChart(record);
   renderCopyPanel(record);
+  renderUploadContext(payload.upload_context || {});
   renderHourlyTable(record);
   renderMonthlyCards(accuracy.monthly || []);
   renderHistoryTable(payload.history || []);
   renderDateNavigation(payload.date_navigation || {});
+  syncUrl();
 }
 
-async function loadDashboard(targetDate = null) {
+function syncUrl() {
+  const url = new URL(window.location.href);
+  if (state.selectedSite) {
+    url.searchParams.set('site', state.selectedSite);
+  } else {
+    url.searchParams.delete('site');
+  }
+  if (state.selectedDate) {
+    url.searchParams.set('target_date', state.selectedDate);
+  } else {
+    url.searchParams.delete('target_date');
+  }
+  window.history.replaceState({}, '', url);
+}
+
+function getInitialQueryState() {
+  const url = new URL(window.location.href);
+  return {
+    site: url.searchParams.get('site'),
+    targetDate: url.searchParams.get('target_date'),
+  };
+}
+
+async function loadDashboard(targetDate = null, siteCode = null) {
   const url = new URL('/api/dashboard', window.location.origin);
+  const resolvedSite = siteCode || state.selectedSite || 'huihua';
+  url.searchParams.set('site', resolvedSite);
   if (targetDate) {
     url.searchParams.set('target_date', targetDate);
   }
@@ -274,7 +369,14 @@ async function submitUpload(event) {
   event.preventDefault();
   const status = document.getElementById('uploadStatus');
   const form = event.currentTarget;
+  if (form.dataset.lockedToday === 'true') {
+    const message = form.dataset.lockMessage || '今天已经上传过实际值，明天再传。';
+    if (status) status.textContent = message;
+    showToast(message, 'error');
+    return;
+  }
   const formData = new FormData(form);
+  formData.set('site', state.selectedSite || 'huihua');
   if (status) status.textContent = '正在更新历史并生成下一次预测...';
 
   const response = await fetch('/api/actual-upload', {
@@ -288,13 +390,22 @@ async function submitUpload(event) {
 
   renderDashboard(payload.dashboard);
   form.reset();
-  const actualDateInput = document.getElementById('actualDateInput');
-  if (actualDateInput) actualDateInput.value = payload.dashboard.next_upload_date;
   setText('uploadStatus', `已更新 ${payload.actual_date}，下一目标日 ${payload.next_target_date}`);
+  showToast(`已上传 ${payload.actual_date} 的实际值`);
 }
 
 function bindNavigation() {
   document.addEventListener('click', async (event) => {
+    const siteButton = event.target.closest('[data-site-code]');
+    if (siteButton?.dataset.siteCode) {
+      try {
+        await loadDashboard(null, siteButton.dataset.siteCode);
+      } catch (error) {
+        setText('uploadStatus', error.message);
+      }
+      return;
+    }
+
     const target = event.target.closest('[data-target-date]');
     if (!target || !target.dataset.targetDate) return;
     try {
@@ -342,8 +453,12 @@ function bindNavigation() {
 }
 
 async function boot() {
+  const initialQuery = getInitialQueryState();
+  if (initialQuery.site) {
+    state.selectedSite = initialQuery.site;
+  }
   try {
-    await loadDashboard();
+    await loadDashboard(initialQuery.targetDate, initialQuery.site);
   } catch (error) {
     setText('uploadStatus', error.message);
   }

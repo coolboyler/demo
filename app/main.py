@@ -13,7 +13,14 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, Field, field_validator
 
-from app.pipeline_service import PIPELINE_NEW_DIR, append_actual_and_refresh, build_dashboard_payload, normalize_hourly_values
+from app.pipeline_service import (
+    DEFAULT_SITE_CODE,
+    append_actual_and_refresh,
+    build_dashboard_payload,
+    get_actual_template_path,
+    normalize_hourly_values,
+    resolve_site_code,
+)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = BASE_DIR / 'static'
@@ -124,40 +131,65 @@ async def healthz() -> dict[str, str]:
 
 
 @app.get('/api/dashboard')
-async def get_dashboard(target_date: Optional[date] = Query(default=None)) -> dict[str, Any]:
-    return build_dashboard_payload(target_date=target_date)
+async def get_dashboard(
+    target_date: Optional[date] = Query(default=None),
+    site: str = Query(default=DEFAULT_SITE_CODE),
+) -> dict[str, Any]:
+    try:
+        return build_dashboard_payload(target_date=target_date, site_code=resolve_site_code(site))
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 @app.get('/api/history')
-async def get_history(target_date: Optional[date] = Query(default=None)) -> dict[str, Any]:
-    payload = build_dashboard_payload(target_date=target_date)
-    return {'items': payload['history']}
+async def get_history(
+    target_date: Optional[date] = Query(default=None),
+    site: str = Query(default=DEFAULT_SITE_CODE),
+) -> dict[str, Any]:
+    try:
+        payload = build_dashboard_payload(target_date=target_date, site_code=resolve_site_code(site))
+        return {'items': payload['history']}
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 @app.get('/api/actual-template')
-async def get_actual_template() -> FileResponse:
-    return FileResponse(
-        PIPELINE_NEW_DIR / 'actual_input_template.csv',
-        media_type='text/csv',
-        filename='actual_input_template.csv',
-    )
+async def get_actual_template(site: str = Query(default=DEFAULT_SITE_CODE)) -> FileResponse:
+    try:
+        site_code = resolve_site_code(site)
+        return FileResponse(
+            get_actual_template_path(site_code),
+            media_type='text/csv',
+            filename=f'actual_input_template_{site_code}.csv',
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 @app.post('/api/actuals')
-async def upload_actual(payload: ActualUploadPayload) -> dict[str, Any]:
+async def upload_actual(
+    payload: ActualUploadPayload,
+    site: str = Query(default=DEFAULT_SITE_CODE),
+) -> dict[str, Any]:
     try:
-        return append_actual_and_refresh(actual_date=payload.actual_date, values=payload.values)
+        return append_actual_and_refresh(
+            actual_date=payload.actual_date,
+            values=payload.values,
+            site_code=resolve_site_code(site),
+        )
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 @app.post('/api/actual-upload')
 async def upload_actual_form(
+    site: str = Form(default=DEFAULT_SITE_CODE),
     actual_date: Optional[str] = Form(default=None),
     raw_values: str = Form(default=''),
     actual_file: Optional[UploadFile] = File(default=None),
 ) -> dict[str, Any]:
     try:
+        site_code = resolve_site_code(site)
         resolved_date = date.fromisoformat(actual_date) if actual_date else None
         if actual_file is not None and actual_file.filename:
             upload_content = await actual_file.read()
@@ -166,13 +198,16 @@ async def upload_actual_form(
             if resolved_date is None:
                 raise ValueError('请先填写实际日期。')
             values = parse_values_text(raw_values)
-        result = append_actual_and_refresh(actual_date=resolved_date, values=values)
-        result['dashboard'] = build_dashboard_payload()
+        result = append_actual_and_refresh(actual_date=resolved_date, values=values, site_code=site_code)
+        result['dashboard'] = build_dashboard_payload(site_code=site_code)
         return result
     except ValueError as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
 
 
 @app.post('/api/d6-actuals')
-async def upload_d6_actual(payload: ActualUploadPayload) -> dict[str, Any]:
-    return await upload_actual(payload)
+async def upload_d6_actual(
+    payload: ActualUploadPayload,
+    site: str = Query(default=DEFAULT_SITE_CODE),
+) -> dict[str, Any]:
+    return await upload_actual(payload, site)
