@@ -221,41 +221,51 @@ def _build_upload_context(site: SiteConfig, max_actual_date: pd.Timestamp) -> di
     expected_actual_date = expected_actual_ts.strftime("%Y-%m-%d")
     generated_target_date = (expected_actual_ts + pd.Timedelta(days=ISSUE_GAP_DAYS)).strftime("%Y-%m-%d")
     guard = _read_upload_guard(site) or {}
-    locked_by_guard = str(guard.get("lock_date", "")) == today.isoformat()
+    uploaded_today = str(guard.get("lock_date", "")) == today.isoformat()
     locked_by_progress = expected_actual_ts > business_actual_date
-    is_locked_today = locked_by_guard or locked_by_progress
-    locked_actual_date = str(guard.get("actual_date", "")).strip() if locked_by_guard else None
-    locked_target_date = str(guard.get("target_date", "")).strip() if locked_by_guard else None
-    uploaded_at = str(guard.get("uploaded_at", "")).strip() if locked_by_guard else None
-    if locked_by_guard and locked_actual_date and locked_target_date:
-        status_text = f"今日上传任务已完成：目标日 {locked_target_date} 对应的 D-6 实际 {locked_actual_date} 已上传"
-        helper_text = f"这张卡片表示今天的上传任务，与右侧当前选中目标日无关。明天再开放 {expected_actual_date} 的上传，届时生成 {generated_target_date} 的预测。"
-        workflow_actual_date = locked_actual_date
-        workflow_target_date = locked_target_date
-        next_step_text = f"明天开放 {expected_actual_date} -> 生成 {generated_target_date}"
-    elif locked_by_progress:
+    is_locked_today = locked_by_progress
+    locked_actual_date = str(guard.get("actual_date", "")).strip() if uploaded_today else None
+    locked_target_date = str(guard.get("target_date", "")).strip() if uploaded_today else None
+    uploaded_at = str(guard.get("uploaded_at", "")).strip() if uploaded_today else None
+    if locked_by_progress:
         finished_actual_date = business_actual_date.strftime("%Y-%m-%d")
         finished_target_date = business_target_date.strftime("%Y-%m-%d")
         next_open_actual_date = expected_actual_date
         next_open_target_date = generated_target_date
-        status_text = f"今日上传任务已完成：目标日 {finished_target_date} 对应的 D-6 实际 {finished_actual_date} 已完成"
-        helper_text = f"这张卡片表示今天的上传任务，与右侧当前选中目标日无关。今天不再显示上传表单，下一次开放为 {next_open_actual_date}，届时生成 {next_open_target_date} 的预测。"
-        workflow_actual_date = finished_actual_date
-        workflow_target_date = finished_target_date
+        badge_text = "今日上传已完成"
+        if uploaded_today and locked_actual_date and locked_target_date:
+            status_text = f"今日上传已补齐：最新上传 {locked_actual_date}，当前已覆盖到 {finished_actual_date}"
+            helper_text = f"今天没有待补传的 D-6 实际了。下一次开放为 {next_open_actual_date}，届时生成 {next_open_target_date} 的预测。"
+            workflow_actual_date = locked_actual_date
+            workflow_target_date = locked_target_date
+        else:
+            status_text = f"今日上传任务已完成：目标日 {finished_target_date} 对应的 D-6 实际 {finished_actual_date} 已完成"
+            helper_text = f"这张卡片表示今天的上传任务，与右侧当前选中目标日无关。今天没有待补传数据，下一次开放为 {next_open_actual_date}，届时生成 {next_open_target_date} 的预测。"
+            workflow_actual_date = finished_actual_date
+            workflow_target_date = finished_target_date
         next_step_text = f"下次开放 {next_open_actual_date} -> 生成 {next_open_target_date}"
     else:
-        status_text = f"今日待完成上传任务：请上传 {expected_actual_date} 的 D-6 实际"
-        helper_text = f"这张卡片表示今天的上传任务，与右侧当前选中目标日无关。提交后会写入历史，并立即生成目标日 {generated_target_date} 的 D 日预测。"
         workflow_actual_date = expected_actual_date
         workflow_target_date = generated_target_date
-        next_step_text = f"上传完成后生成 {generated_target_date}"
+        if uploaded_today and locked_actual_date and locked_target_date:
+            badge_text = "可继续补传"
+            status_text = f"今日已上传 {locked_actual_date}，仍可继续补传 {expected_actual_date} 的 D-6 实际"
+            helper_text = f"今天支持多次补传。下一笔建议上传 {expected_actual_date}，提交后会生成目标日 {generated_target_date} 的预测。"
+            next_step_text = f"继续上传 {expected_actual_date} -> 生成 {generated_target_date}"
+        else:
+            badge_text = "当前待上传"
+            status_text = f"今日待完成上传任务：请上传 {expected_actual_date} 的 D-6 实际"
+            helper_text = f"这张卡片表示今天的上传任务，与右侧当前选中目标日无关。提交后会写入历史，并立即生成目标日 {generated_target_date} 的 D 日预测。"
+            next_step_text = f"上传完成后生成 {generated_target_date}"
     return {
         "server_today": today.isoformat(),
         "expected_actual_date": expected_actual_date,
         "generated_target_date": generated_target_date,
         "is_locked_today": is_locked_today,
-        "locked_by_guard": locked_by_guard,
+        "locked_by_guard": uploaded_today,
         "locked_by_progress": locked_by_progress,
+        "uploaded_today": uploaded_today,
+        "badge_text": badge_text,
         "business_target_date": business_target_date.strftime("%Y-%m-%d"),
         "business_actual_date": business_actual_date.strftime("%Y-%m-%d"),
         "locked_actual_date": locked_actual_date,
@@ -958,23 +968,28 @@ def build_dashboard_payload(target_date: date | None = None, site_code: str = DE
 
 def append_actual_and_refresh(actual_date: date, values: list[float], site_code: str = DEFAULT_SITE_CODE) -> dict[str, Any]:
     site = get_site_config(site_code)
-    guard = _read_upload_guard(site) or {}
-    if str(guard.get("lock_date", "")) == _today_local().isoformat():
-        locked_actual_date = str(guard.get("actual_date", "")).strip() or "今天"
-        raise ValueError(f"今天已经上传过 {locked_actual_date} 的实际值，上传入口明天会自动恢复。")
-
     cleaned_values = normalize_hourly_values(values)
     target_ts = pd.Timestamp(actual_date).normalize()
     history_daily = _load_history_daily(site)
     max_actual_date = get_max_actual_date(history_daily)
     expected_date = max_actual_date + pd.Timedelta(days=1)
-    business_actual_date = pd.Timestamp(_today_local()) - pd.Timedelta(days=ISSUE_GAP_DAYS)
+    business_actual_date = pd.Timestamp(_today_local()) + pd.Timedelta(days=1) - pd.Timedelta(days=ISSUE_GAP_DAYS)
     if expected_date > business_actual_date:
         raise ValueError(
             f"今天对应的 D-6 实际 {business_actual_date.strftime('%Y-%m-%d')} 已完成，今天不能再上传 {expected_date.strftime('%Y-%m-%d')}。"
         )
+    if target_ts <= max_actual_date:
+        raise ValueError(
+            f"{target_ts.strftime('%Y-%m-%d')} 已存在或早于当前进度，当前最早待补传日期是 {expected_date.strftime('%Y-%m-%d')}。"
+        )
+    if target_ts > business_actual_date:
+        raise ValueError(
+            f"当前最晚可上传的 D-6 实际日期是 {business_actual_date.strftime('%Y-%m-%d')}，不能上传 {target_ts.strftime('%Y-%m-%d')}。"
+        )
     if target_ts != expected_date:
-        raise ValueError(f"actual date must be {expected_date.strftime('%Y-%m-%d')}")
+        raise ValueError(
+            f"请按日期顺序补传，当前最早缺失实际日期是 {expected_date.strftime('%Y-%m-%d')}，不能直接上传 {target_ts.strftime('%Y-%m-%d')}。"
+        )
 
     history_hourly = _load_history_hourly(site)
     profile = np.asarray(cleaned_values, dtype=float)

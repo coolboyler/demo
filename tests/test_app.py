@@ -174,6 +174,79 @@ def test_upload_actual_generates_next_forecast(patched_pipeline) -> None:
     assert history_payload['accuracy']['matched_days'] >= 67
 
 
+def test_upload_actual_allows_multiple_backfills_same_day(patched_pipeline, monkeypatch) -> None:
+    monkeypatch.setattr(pipeline_service, '_today_local', lambda: date(2026, 3, 16))
+
+    first_response = request(
+        main_module.app,
+        'POST',
+        '/api/actuals',
+        params={'site': 'huihua'},
+        json={
+            'actual_date': '2026-03-09',
+            'values': build_values(1.6),
+        },
+    )
+    assert first_response.status_code == 200
+    first_payload = first_response.json()
+    assert first_payload['next_target_date'] == '2026-03-15'
+
+    mid_dashboard = request(main_module.app, 'GET', '/api/dashboard', params={'site': 'huihua'})
+    assert mid_dashboard.status_code == 200
+    mid_payload = mid_dashboard.json()
+    assert mid_payload['max_actual_date'] == '2026-03-09'
+    assert mid_payload['upload_context']['is_locked_today'] is False
+    assert mid_payload['upload_context']['uploaded_today'] is True
+    assert mid_payload['upload_context']['workflow_actual_date'] == '2026-03-10'
+    assert mid_payload['upload_context']['badge_text'] == '可继续补传'
+
+    second_response = request(
+        main_module.app,
+        'POST',
+        '/api/actuals',
+        params={'site': 'huihua'},
+        json={
+            'actual_date': '2026-03-10',
+            'values': build_values(1.8),
+        },
+    )
+    assert second_response.status_code == 200
+    second_payload = second_response.json()
+    assert second_payload['next_target_date'] == '2026-03-16'
+    assert (patched_pipeline / 'results' / 'forecast_d6_20260316.csv').exists()
+
+    second_dashboard = request(main_module.app, 'GET', '/api/dashboard', params={'site': 'huihua'})
+    assert second_dashboard.status_code == 200
+    second_dashboard_payload = second_dashboard.json()
+    assert second_dashboard_payload['max_actual_date'] == '2026-03-10'
+    assert second_dashboard_payload['upload_context']['is_locked_today'] is False
+    assert second_dashboard_payload['upload_context']['workflow_actual_date'] == '2026-03-11'
+    assert second_dashboard_payload['upload_context']['badge_text'] == '可继续补传'
+
+    third_response = request(
+        main_module.app,
+        'POST',
+        '/api/actuals',
+        params={'site': 'huihua'},
+        json={
+            'actual_date': '2026-03-11',
+            'values': build_values(1.9),
+        },
+    )
+    assert third_response.status_code == 200
+    third_payload = third_response.json()
+    assert third_payload['next_target_date'] == '2026-03-17'
+    assert (patched_pipeline / 'results' / 'forecast_d6_20260317.csv').exists()
+
+    final_dashboard = request(main_module.app, 'GET', '/api/dashboard', params={'site': 'huihua'})
+    assert final_dashboard.status_code == 200
+    final_payload = final_dashboard.json()
+    assert final_payload['max_actual_date'] == '2026-03-11'
+    assert final_payload['upload_context']['is_locked_today'] is True
+    assert final_payload['upload_context']['workflow_actual_date'] == '2026-03-11'
+    assert final_payload['upload_context']['badge_text'] == '今日上传已完成'
+
+
 def test_upload_actual_is_isolated_by_site(patched_pipeline, monkeypatch) -> None:
     monkeypatch.setattr(pipeline_service, '_today_local', lambda: date(2026, 3, 16))
 

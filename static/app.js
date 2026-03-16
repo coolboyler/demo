@@ -261,6 +261,7 @@ function renderUploadContext(uploadContext = {}) {
   if (!form || !formWrap || !actualDateInput || !actualFileInput || !rawValuesInput || !submitButton || !guardCard || !guardBadge) return;
 
   const isLocked = Boolean(uploadContext.is_locked_today);
+  const badgeText = uploadContext.badge_text || (isLocked ? '当前无待上传' : '当前待上传');
   form.dataset.lockedToday = isLocked ? 'true' : 'false';
   form.dataset.lockMessage = uploadContext.helper_text || '';
 
@@ -269,12 +270,12 @@ function renderUploadContext(uploadContext = {}) {
   actualFileInput.disabled = isLocked;
   rawValuesInput.disabled = isLocked;
   submitButton.disabled = isLocked;
-  submitButton.textContent = isLocked ? '今日上传已完成' : '提交本次 D-6 实际并生成目标日预测';
+  submitButton.textContent = isLocked ? '当前无待上传实际' : '提交本次 D-6 实际并生成目标日预测';
 
   guardCard.classList.toggle('locked', isLocked);
   guardCard.classList.toggle('ready', !isLocked);
   formWrap.hidden = isLocked;
-  guardBadge.textContent = isLocked ? '今日上传已完成' : '当前待上传';
+  guardBadge.textContent = badgeText;
   setText('uploadGuardToday', `系统日期 ${uploadContext.server_today || '-'}`);
   setText('uploadGuardText', uploadContext.status_text || '-');
   setText('uploadWorkflowTargetDate', uploadContext.workflow_target_date || '-');
@@ -370,7 +371,7 @@ async function submitUpload(event) {
   const status = document.getElementById('uploadStatus');
   const form = event.currentTarget;
   if (form.dataset.lockedToday === 'true') {
-    const message = form.dataset.lockMessage || '今天已经上传过实际值，明天再传。';
+    const message = form.dataset.lockMessage || '当前没有待上传的实际日期。';
     if (status) status.textContent = message;
     showToast(message, 'error');
     return;
@@ -388,8 +389,8 @@ async function submitUpload(event) {
     throw new Error(payload.detail || 'upload failed');
   }
 
-  renderDashboard(payload.dashboard);
   form.reset();
+  renderDashboard(payload.dashboard);
   setText('uploadStatus', `已更新 ${payload.actual_date}，下一目标日 ${payload.next_target_date}`);
   showToast(`已上传 ${payload.actual_date} 的实际值`);
 }
