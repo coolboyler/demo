@@ -1,2 +1,0 @@
-target_date,split,holiday_family,holiday_segment,target_refined_date_type,route_name,actual_daily_total,pred_daily_total,similar_reference_dates,similar_reference_tags,similar_reference_scores,similar_reference_weights
-2026-03-10,future,,other,workday_w1,ordinary_similar:workday,,163.8277695580864,2024-03-05|2025-02-25|2025-03-04,after:Spring Festival:w3|after:Spring Festival:w3|after:Spring Festival:w4,36.000000|35.916667|31.250000,0.348950|0.348142|0.302908

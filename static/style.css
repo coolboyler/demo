@@ -233,6 +233,8 @@ body {
   border-radius: 12px;
   background: #fbfcfe;
   color: var(--text-primary);
+  cursor: pointer;
+  transition: opacity 0.18s ease, transform 0.18s ease, border-color 0.18s ease, background-color 0.18s ease;
 }
 
 .site-switch-button span {
@@ -250,6 +252,16 @@ body {
   border-color: rgba(37, 99, 235, 0.28);
   background: rgba(37, 99, 235, 0.08);
   box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.12);
+}
+
+.site-switch-button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.site-switch-button.loading {
+  border-color: rgba(37, 99, 235, 0.4);
+  background: rgba(37, 99, 235, 0.12);
 }
 
 .meta-item {

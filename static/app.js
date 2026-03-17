@@ -1,7 +1,11 @@
 const state = {
   selectedSite: null,
   selectedDate: null,
+  isDashboardLoading: false,
 };
+
+let dashboardRequestController = null;
+let dashboardRequestToken = 0;
 
 const ROUTE_LABELS = {
   'base_rule': '基础规则',
@@ -167,12 +171,52 @@ function renderSiteSwitcher(sites, activeSite) {
       type="button"
       class="site-switch-button ${site.code === activeSite ? 'active' : ''}"
       data-site-code="${site.code}"
+      ${state.isDashboardLoading ? 'disabled' : ''}
     >
       <span>${site.name}</span>
       <small>${site.code}</small>
     </button>
   `).join('');
   setText('siteSwitchHint', activeSite ? `当前站点 ${sites.find((site) => site.code === activeSite)?.name || activeSite}，上传与展示数据互相独立。` : '切换站点后会同步刷新页面与上传入口');
+}
+
+function setDashboardLoading(isLoading, pendingSiteCode = null) {
+  state.isDashboardLoading = isLoading;
+
+  const pendingSiteName = pendingSiteCode
+    ? Array.from(document.querySelectorAll('.site-switch-button'))
+      .find((button) => button.dataset.siteCode === pendingSiteCode)
+      ?.querySelector('span')
+      ?.textContent || pendingSiteCode
+    : null;
+
+  document.querySelectorAll('.site-switch-button').forEach((button) => {
+    button.disabled = isLoading;
+    button.classList.toggle('loading', isLoading && button.dataset.siteCode === pendingSiteCode);
+  });
+
+  document.querySelectorAll('button[data-target-date]').forEach((button) => {
+    button.disabled = isLoading;
+  });
+
+  const selectedDateInput = document.getElementById('selectedDateInput');
+  if (selectedDateInput) {
+    selectedDateInput.disabled = isLoading;
+  }
+
+  const prevButton = document.getElementById('prevDateButton');
+  if (prevButton) {
+    prevButton.disabled = isLoading || !prevButton.dataset.targetDate;
+  }
+
+  const nextButton = document.getElementById('nextDateButton');
+  if (nextButton) {
+    nextButton.disabled = isLoading || !nextButton.dataset.targetDate;
+  }
+
+  if (isLoading && pendingSiteName) {
+    setText('siteSwitchHint', `正在切换到 ${pendingSiteName}，请稍候...`);
+  }
 }
 
 function renderHistoryTable(rows) {
@@ -357,13 +401,33 @@ function getInitialQueryState() {
 async function loadDashboard(targetDate = null, siteCode = null) {
   const url = new URL('/api/dashboard', window.location.origin);
   const resolvedSite = siteCode || state.selectedSite || 'huihua';
+  const requestToken = ++dashboardRequestToken;
+  const requestController = new AbortController();
+  if (dashboardRequestController) {
+    dashboardRequestController.abort();
+  }
+  dashboardRequestController = requestController;
+  setDashboardLoading(true, resolvedSite);
   url.searchParams.set('site', resolvedSite);
   if (targetDate) {
     url.searchParams.set('target_date', targetDate);
   }
-  const response = await fetch(url);
-  if (!response.ok) throw new Error('dashboard load failed');
-  renderDashboard(await response.json());
+  try {
+    const response = await fetch(url, { signal: requestController.signal });
+    if (!response.ok) throw new Error('dashboard load failed');
+    const payload = await response.json();
+    if (requestToken !== dashboardRequestToken) return;
+    renderDashboard(payload);
+  } finally {
+    if (requestToken === dashboardRequestToken) {
+      dashboardRequestController = null;
+      setDashboardLoading(false);
+    }
+  }
+}
+
+function isAbortError(error) {
+  return error?.name === 'AbortError';
 }
 
 async function submitUpload(event) {
@@ -402,6 +466,7 @@ function bindNavigation() {
       try {
         await loadDashboard(null, siteButton.dataset.siteCode);
       } catch (error) {
+        if (isAbortError(error)) return;
         setText('uploadStatus', error.message);
       }
       return;
@@ -412,6 +477,7 @@ function bindNavigation() {
     try {
       await loadDashboard(target.dataset.targetDate);
     } catch (error) {
+      if (isAbortError(error)) return;
       setText('uploadStatus', error.message);
     }
   });
@@ -423,6 +489,7 @@ function bindNavigation() {
       try {
         await loadDashboard(event.target.value);
       } catch (error) {
+        if (isAbortError(error)) return;
         setText('uploadStatus', error.message);
       }
     });
@@ -461,6 +528,7 @@ async function boot() {
   try {
     await loadDashboard(initialQuery.targetDate, initialQuery.site);
   } catch (error) {
+    if (isAbortError(error)) return;
     setText('uploadStatus', error.message);
   }
 
