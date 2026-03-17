@@ -140,6 +140,43 @@ def test_dashboard_supports_tianlang_site(patched_pipeline) -> None:
     assert any(site['code'] == 'huihua' for site in payload['available_sites'])
 
 
+def test_dashboard_supports_tianlang_without_writing_missing_future_files(patched_pipeline, monkeypatch) -> None:
+    missing_daily_path = patched_pipeline / 'tianlang' / 'results' / '2026-03' / 'forecast_d6_tianlang_20260315_2024fill_shared_20260315.csv'
+    missing_long_path = patched_pipeline / 'tianlang' / 'results' / '2026-03' / 'forecast_d6_tianlang_20260315_2024fill_shared_20260315_long.csv'
+    missing_match_path = patched_pipeline / 'tianlang' / 'results' / '2026-03' / 'forecast_d6_tianlang_20260315_2024fill_shared_20260315_matches.csv'
+    missing_summary_path = patched_pipeline / 'tianlang' / 'results' / '2026-03' / 'forecast_d6_tianlang_20260315_2024fill_shared_20260315_summary.json'
+    for path in [missing_daily_path, missing_long_path, missing_match_path, missing_summary_path]:
+        if path.exists():
+            path.unlink()
+
+    monkeypatch.setattr(
+        pipeline_service,
+        '_write_operational_forecast',
+        lambda *args, **kwargs: (_ for _ in ()).throw(AssertionError('dashboard should not write forecast files')),
+    )
+
+    response = request(main_module.app, 'GET', '/api/dashboard', params={'site': 'tianlang'})
+    assert response.status_code == 200
+    payload = response.json()
+
+    assert payload['site_code'] == 'tianlang'
+    assert payload['selected_date'] == '2026-03-15'
+    assert payload['current_target_date'] == '2026-03-15'
+    assert payload['pipeline_files']['current_forecast'] == 'runtime/2026-03/forecast_d6_tianlang_20260315_2024fill_shared_20260315.csv'
+    assert '2026-03-15' in payload['date_navigation']['available_dates']
+    assert not missing_daily_path.exists()
+
+
+def test_responses_disable_stale_cache(patched_pipeline) -> None:
+    index_response = request(main_module.app, 'GET', '/')
+    assert index_response.status_code == 200
+    assert index_response.headers['Cache-Control'] == 'no-store'
+
+    dashboard_response = request(main_module.app, 'GET', '/api/dashboard')
+    assert dashboard_response.status_code == 200
+    assert dashboard_response.headers['Cache-Control'] == 'no-store'
+
+
 def test_upload_actual_generates_next_forecast(patched_pipeline) -> None:
     response = request(
         main_module.app,

@@ -710,22 +710,64 @@ def _write_operational_forecast(site: SiteConfig, history: pd.DataFrame, target_
     }
 
 
-def _ensure_current_forecast(site: SiteConfig, history: pd.DataFrame, saved_forecasts: dict[str, dict[str, Any]]) -> dict[str, Any]:
+def _runtime_forecast_history_source(site: SiteConfig, target_date: pd.Timestamp) -> str:
+    normalized_target_date = pd.Timestamp(target_date).normalize()
+    target_label = normalized_target_date.strftime("%Y%m%d")
+    forecast_stem = build_forecast_stem(site, target_label)
+    output_dir = build_forecast_output_dir(site, normalized_target_date)
+    if output_dir == site.results_dir:
+        relative_path = Path(f"{forecast_stem}.csv")
+    else:
+        relative_path = output_dir.relative_to(site.results_dir) / f"{forecast_stem}.csv"
+    return f"runtime/{relative_path.as_posix()}"
+
+
+def _runtime_forecast_row(site: SiteConfig, history: pd.DataFrame, target_date: pd.Timestamp) -> dict[str, Any]:
+    normalized_target_date = pd.Timestamp(target_date).normalize()
+    prediction_bundle = _predict_target_date(site=site, history=history, target_date=normalized_target_date)
+    output_frame = prediction_bundle["output_frame"]
+    row = output_frame.iloc[0]
+    target_iso = str(row["target_date"])
+    return {
+        "target_date": target_iso,
+        "issue_date": str(row["issue_date"]),
+        "target_refined_date_type": str(row.get("target_refined_date_type", "")),
+        "target_date_type_group": str(row.get("target_date_type_group", "")),
+        "route_name": str(row.get("route_name", "base_rule")),
+        "forecast_mode": str(row.get("forecast_mode", f"strict_d{ISSUE_GAP_DAYS}")),
+        "model_values": [round(float(row[f"pred_h{hour:02d}"]), 4) for hour in range(24)],
+        "model_total": round(float(row["pred_daily_total"]), 4),
+        "history_source": _runtime_forecast_history_source(site, normalized_target_date),
+    }
+
+
+def _ensure_future_forecasts(
+    site: SiteConfig,
+    history: pd.DataFrame,
+    saved_forecasts: dict[str, dict[str, Any]],
+    *,
+    persist_missing: bool,
+) -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    resolved_forecasts = dict(saved_forecasts)
     max_actual_date = get_max_actual_date(history)
     first_future_target = max_actual_date + pd.Timedelta(days=1)
     current_target = max_actual_date + pd.Timedelta(days=ISSUE_GAP_DAYS)
+
     wrote_missing_forecasts = False
     for target_date in pd.date_range(first_future_target, current_target, freq="D"):
         target_iso = pd.Timestamp(target_date).strftime("%Y-%m-%d")
-        if target_iso in saved_forecasts:
+        if target_iso in resolved_forecasts:
             continue
-        _write_operational_forecast(site, history, pd.Timestamp(target_date))
-        wrote_missing_forecasts = True
+        if persist_missing:
+            _write_operational_forecast(site, history, pd.Timestamp(target_date))
+            wrote_missing_forecasts = True
+            continue
+        resolved_forecasts[target_iso] = _runtime_forecast_row(site, history, pd.Timestamp(target_date))
 
     if wrote_missing_forecasts:
-        saved_forecasts.update(_load_saved_forecasts(site))
+        resolved_forecasts.update(_load_saved_forecasts(site))
     current_target_iso = current_target.strftime("%Y-%m-%d")
-    return saved_forecasts[current_target_iso]
+    return resolved_forecasts, resolved_forecasts[current_target_iso]
 
 
 def _build_future_rows(
@@ -847,7 +889,7 @@ def build_dashboard_payload(target_date: date | None = None, site_code: str = DE
     site = get_site_config(site_code)
     history = _load_history_daily(site)
     saved_forecasts = _load_saved_forecasts(site)
-    current_forecast = _ensure_current_forecast(site, history, saved_forecasts)
+    saved_forecasts, current_forecast = _ensure_future_forecasts(site, history, saved_forecasts, persist_missing=False)
     reference_rows = _build_reference_predictions(site)
     min_reference_date = pd.Timestamp(reference_rows["target_date"].max()) if not reference_rows.empty else DISPLAY_START_DATE
     operational_rows = _build_operational_history(history, saved_forecasts, DISPLAY_START_DATE, min_reference_date)

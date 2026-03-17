@@ -112,6 +112,18 @@ app.mount('/static', StaticFiles(directory=STATIC_DIR), name='static')
 templates = Jinja2Templates(directory=TEMPLATES_DIR)
 
 
+@app.middleware('http')
+async def apply_cache_headers(request: Request, call_next):
+    response = await call_next(request)
+    path = request.url.path
+    if path == '/' or path.startswith('/api/'):
+        response.headers['Cache-Control'] = 'no-store'
+        response.headers['Pragma'] = 'no-cache'
+    elif path.startswith('/static/'):
+        response.headers['Cache-Control'] = 'public, max-age=0, must-revalidate'
+    return response
+
+
 @app.get('/', response_class=HTMLResponse)
 async def index(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(
