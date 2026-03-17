@@ -167,6 +167,21 @@ def test_dashboard_supports_tianlang_without_writing_missing_future_files(patche
     assert not missing_daily_path.exists()
 
 
+def test_dashboard_remaps_stale_absolute_rule_summary_path(patched_pipeline) -> None:
+    summary_path = patched_pipeline / 'tianlang' / 'results' / 'best_d6_tianlang_2024fill_shared_summary.json'
+    summary = pipeline_service.json.loads(summary_path.read_text(encoding='utf-8'))
+    summary['rule_summary_path'] = '/stale/workspace/pipeline/tianlang/results/baseline_d6_tianlang_2024fill_shared_summary.json'
+    summary_path.write_text(pipeline_service.json.dumps(summary, ensure_ascii=False, indent=2), encoding='utf-8')
+
+    fallback_path = patched_pipeline / 'tianlang' / 'results' / 'baseline_d6_tianlang_2024fill_shared_summary.json'
+    assert fallback_path.exists()
+
+    site = pipeline_service.get_site_config('tianlang')
+    resolved_path = pipeline_service._resolved_router_summary_path(site)
+    resolved = pipeline_service.json.loads(resolved_path.read_text(encoding='utf-8'))
+    assert resolved['rule_summary_path'] == str(fallback_path)
+
+
 def test_responses_disable_stale_cache(patched_pipeline) -> None:
     index_response = request(main_module.app, 'GET', '/')
     assert index_response.status_code == 200

@@ -163,6 +163,38 @@ def get_reference_test_daily_path(site: SiteConfig) -> Path | None:
     return site.results_dir / site.reference_test_daily_filename
 
 
+def _resolve_embedded_path(
+    raw_path: str | Path | None,
+    *,
+    relative_base: Path,
+    fallback: Path | None = None,
+) -> Path:
+    if raw_path is None:
+        if fallback is None:
+            raise FileNotFoundError("missing embedded path")
+        return fallback
+
+    candidate = Path(raw_path)
+    if candidate.exists():
+        return candidate
+
+    if not candidate.is_absolute():
+        relative_candidate = (relative_base / candidate).resolve()
+        if relative_candidate.exists():
+            return relative_candidate
+    else:
+        parts = list(candidate.parts)
+        if "pipeline" in parts:
+            pipeline_index = parts.index("pipeline")
+            remapped = (BASE_DIR / Path(*parts[pipeline_index:])).resolve()
+            if remapped.exists():
+                return remapped
+
+    if fallback is not None and fallback.exists():
+        return fallback
+    return candidate
+
+
 def normalize_hourly_values(values: list[float]) -> list[float]:
     if len(values) != 24:
         raise ValueError("values must contain exactly 24 hourly values")
@@ -285,9 +317,11 @@ def _resolved_router_summary_path(site: SiteConfig) -> Path:
     source_path = get_best_summary_path(site)
     resolved_path = site.results_dir / "_best_d6_summary_resolved.json"
     summary = json.loads(source_path.read_text(encoding="utf-8"))
-    rule_summary_path = Path(summary["rule_summary_path"])
-    if not rule_summary_path.is_absolute():
-        rule_summary_path = (site.results_dir.parent / rule_summary_path).resolve()
+    rule_summary_path = _resolve_embedded_path(
+        summary.get("rule_summary_path"),
+        relative_base=site.results_dir.parent,
+        fallback=get_baseline_summary_path(site),
+    )
     summary["rule_summary_path"] = str(rule_summary_path)
     resolved_path.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     return resolved_path
