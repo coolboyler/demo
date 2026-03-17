@@ -14,8 +14,8 @@ htmlcov/
 
 *.log
 
-*.csv
-*.json
+# *.csv
+# *.json
 
 data/generated/
 data/uploads/

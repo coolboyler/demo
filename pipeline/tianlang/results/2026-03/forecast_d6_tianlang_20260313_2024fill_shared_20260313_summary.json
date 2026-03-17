@@ -1,0 +1,18 @@
+{
+  "task_definition": "Operational D-6 future forecast using the holiday-router model.",
+  "history_path": "/Users/cayron/work/demo/pipeline/tianlang/new/history_daily_2024fill.csv",
+  "router_summary_path": "/Users/cayron/work/demo/pipeline/tianlang/results/best_d6_tianlang_2024fill_shared_summary.json",
+  "issue_gap_days": 6,
+  "target_date": "2026-03-13",
+  "issue_date": "2026-03-07",
+  "max_actual_date": "2026-03-09",
+  "route_name": "ordinary_similar:workday",
+  "forecast_mode": "strict_d6",
+  "used_predicted_history": 0,
+  "pred_daily_total": 176.05945393583363,
+  "prediction_outputs": {
+    "daily": "/Users/cayron/work/demo/pipeline/tianlang/results/forecast_d6_tianlang_20260313_2024fill_shared_20260313.csv",
+    "long": "/Users/cayron/work/demo/pipeline/tianlang/results/forecast_d6_tianlang_20260313_2024fill_shared_20260313_long.csv",
+    "matches": "/Users/cayron/work/demo/pipeline/tianlang/results/forecast_d6_tianlang_20260313_2024fill_shared_20260313_matches.csv"
+  }
+}
